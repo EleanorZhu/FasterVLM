@@ -7,7 +7,7 @@ import ast
 
 from transformers import StoppingCriteria
 from llava.constants import IMAGE_TOKEN_INDEX
-
+import random
 
 def select_best_resolution(original_size, possible_resolutions):
     """
@@ -130,12 +130,12 @@ def process_anyres_image(image, processor, grid_pinpoints):
     else:
         possible_resolutions = ast.literal_eval(grid_pinpoints)
     best_resolution = select_best_resolution(image.size, possible_resolutions)
+    # print('best_resolution', best_resolution)
     image_padded = resize_and_pad_image(image, best_resolution)
 
     patches = divide_to_patches(image_padded, processor.crop_size['height'])
 
     image_original_resize = image.resize((processor.size['shortest_edge'], processor.size['shortest_edge']))
-
     image_patches = [image_original_resize] + patches
     image_patches = [processor.preprocess(image_patch, return_tensors='pt')['pixel_values'][0]
                      for image_patch in image_patches]
@@ -161,12 +161,23 @@ def expand2square(pil_img, background_color):
 
 
 def process_images(images, image_processor, model_cfg):
+    # print('images.shape', images[0].size)
     image_aspect_ratio = getattr(model_cfg, "image_aspect_ratio", None)
     new_images = []
     if image_aspect_ratio == 'pad':
         for image in images:
+            # print('image.size', image.size)
             image = expand2square(image, tuple(int(x*255) for x in image_processor.image_mean))
+            # print('image.size', image.size)
+            # image_processor.crop_size['height'] = 224
+            # image_processor.crop_size['width'] = 224
             image = image_processor.preprocess(image, return_tensors='pt')['pixel_values'][0]
+
+
+            # image_processor['crop_size']['height'] = 224
+            # image_processor['crop_size']['width'] = 224
+            # print('image_prcessor', image_processor)
+            # print('image.size', image.shape)
             new_images.append(image)
     elif image_aspect_ratio == "anyres":
         for image in images:
@@ -176,6 +187,43 @@ def process_images(images, image_processor, model_cfg):
         return image_processor(images, return_tensors='pt')['pixel_values']
     if all(x.shape == new_images[0].shape for x in new_images):
         new_images = torch.stack(new_images, dim=0)
+    # print('new_images.shape', new_images[0].shape)
+
+
+    # tensor_to_save = new_images[0]
+    # # 1. (如果需要) 去除梯度信息并移到 CPU
+    # processed_tensor = tensor_to_save.detach().cpu()
+
+    # # 2. 调整维度顺序: CHW -> HWC
+    # processed_tensor = processed_tensor.permute(1, 2, 0) # shape: (64, 128, 3)
+
+    # # 3. 调整值范围: [0, 1] -> [0, 255]
+    # #    如果你的原始范围是 [-1, 1], 则需要: processed_tensor = (processed_tensor * 0.5 + 0.5) * 255
+    # #    如果你的原始范围是其他归一化方式, 需要先反归一化
+    # processed_tensor = processed_tensor * 255
+
+    # # 4. (可选但推荐) 确保值在 [0, 255] 范围内
+    # processed_tensor = processed_tensor.clamp(0, 255)
+
+    # # 5. 转换数据类型为 uint8
+    # processed_tensor = processed_tensor.to(torch.uint8)
+
+    # # 6. 转换为 NumPy 数组
+    # numpy_array = processed_tensor.numpy()
+
+    # # 7. 从 NumPy 数组创建 PIL Image 对象
+    # pil_image = Image.fromarray(numpy_array)
+
+    # # 8. 保存图片
+    # try:
+    #     tmp = random.randint(1, 100)
+    #     file_path = f"/home/qingchan/project/FasterVLM/tmp_imgs/output_image_pil_{tmp}.png"
+    #     pil_image.save(file_path)
+    #     print(f"图片已使用 PIL 保存到: {file_path}")
+    # except Exception as e:
+    #     print(f"使用 PIL 保存图片时出错: {e}")
+
+
     return new_images
 
 

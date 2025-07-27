@@ -6,7 +6,7 @@ TOKEN=${1}
 PARAM="n_${TOKEN}"
 
 python -m llava.eval.model_vqa_loader \
-    --model-path /path/to/checkpoint/${CKPT} \
+    --model-path ./checkpoints/llava-v1.5-7b \
     --question-file ./playground/data/eval/vizwiz/llava_test.jsonl \
     --image-folder ./playground/data/eval/vizwiz/test \
     --answers-file ./playground/data/eval/vizwiz/answers/${CKPT}/${METHOD}/${PARAM}.jsonl \

@@ -6,7 +6,7 @@ TOKEN=${1}
 PARAM="n_${TOKEN}"
 
 python -W ignore -m llava.eval.model_vqa_mmbench \
-    --model-path /path/to/checkpoint/${CKPT} \
+    --model-path ./checkpoints/llava-v1.5-7b \
     --question-file ./playground/data/eval/mmbench_cn/mmbench_dev_cn_20231003.tsv \
     --answers-file ./playground/data/eval/mmbench_cn/answers/${CKPT}/${METHOD}/${PARAM}.jsonl \
     --lang cn \

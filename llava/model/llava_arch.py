@@ -139,32 +139,55 @@ class LlavaMetaForCausalLM(ABC):
 
     # FasterVLM
     def encode_images(self, images):
+        ### 获取所有视觉 token feature 和 attention score
         image_features, image_attentions = self.get_model().get_vision_tower()(images) # (B, N, C), (B, M, N) = (1, 576, 1024), (1, 16, 576)
 
         # image_attentions = image_attentions.max(dim=1)[0] # (B, N) = (1, 576)
         image_attentions = image_attentions.mean(dim=1) # (B, N) = (1, 576)
 
         B, N = image_features.shape[:2]
-        visual_token_num = self.get_visual_token_num() # T
+        visual_token_num = self.get_visual_token_num() # T: 保留的token数量
 
         # prune visual tokens by random scores
         # token_weights = torch.rand(B, N, device=image_features.device) # (B, N)
-        # token_indices = torch.topk(token_weights, k=visual_token_num, dim=1)[1] # (B, T)
+        # token_indices = torch.topk(token_weights, k=visual_token_num, dim=1)[1] ### (B, T) 保留attention分数最高的T个token
         # token_indices = torch.sort(token_indices, dim=1)[0] # (B, T)
 
-        # prune visual tokens by attention scores
+        ### prune visual tokens by attention scores
         token_indices = torch.topk(image_attentions, k=visual_token_num, dim=1)[1] # (B, T)
         token_indices = torch.sort(token_indices, dim=1)[0] # (B, T)
 
-        # generate index mask
+        ### generate index mask
+        # 相关方法如`encode_images`，会根据 attention 权重生成 index mask，决定哪些视觉 token 送入后续模块。
         index_mask = torch.zeros(B, N, dtype=torch.bool, device=image_features.device) # (B, N)
-        index_mask.scatter_(1, token_indices, True) # (B, N)
+        index_mask.scatter_(1, token_indices, True) # (B, N)   
 
-        image_features = self.get_model().mm_projector(image_features) # (B, N, D)
+        # ----- 新增代码：存储 index_mask 和 patch_grid_dims -----
+        # 假设 self.get_model() 返回的是可以设置属性的 LLaVA 模型实例
+        # 例如，在 LlavaLlamaModel 或类似的模型类中
+        # 您可能需要在该模型类定义中预先声明这些属性为 None，例如：
+        # class YourLlavaModel(PreTrainedModel):
+        #     _last_index_mask = None
+        #     _last_patch_grid_dims = None
+        #     ...
+        # 或者，如果您的模型允许动态添加属性，则可以直接赋值
+
+        # 确保 self.get_model() 返回的是正确的对象实例
+        # 通常，LlavaMetaForCausalLM 是一个 mixin，self.get_model() 返回的是包含 vision_tower 和 mm_projector 的核心模型组件
+        # 我们可以在这个核心模型组件上存储这些属性
+        target_model_component = self.get_model()
+        target_model_component._last_index_mask = index_mask.cpu() # 存储在 CPU 上
+        target_model_component._last_patch_grid_dims = (24, 24)
+
+        # ----- 新增代码结束 -----
+
+        #image_features = self.get_model().mm_projector(image_features) # (B, N, D)
+        image_features = target_model_component.mm_projector(image_features) # (B, N, D)
         
         return image_features, index_mask, image_attentions
 
-    # FasterVLM
+     # FasterVLM
+     # Prune visual tokens according to index masks
     def prepare_inputs_labels_for_multimodal(
         self, input_ids, position_ids, attention_mask, past_key_values, labels,
         images, image_sizes=None
@@ -172,11 +195,13 @@ class LlavaMetaForCausalLM(ABC):
         vision_tower = self.get_vision_tower()
         if vision_tower is None or images is None or input_ids.shape[1] == 1:
             return input_ids, position_ids, attention_mask, past_key_values, None, labels
-
+        # print('images.shape', images.shape)
         if type(images) is list or images.ndim == 5:
+            # print('L183')
             if type(images) is list:
                 images = [x.unsqueeze(0) if x.ndim == 3 else x for x in images]
             concat_images = torch.cat([image for image in images], dim=0)
+            # print('concat_images.shape', concat_images.shape)
             image_features, index_masks, image_attns = self.encode_images(concat_images)
             split_sizes = [image.shape[0] for image in images]
             image_features = torch.split(image_features, split_sizes, dim=0)
@@ -246,13 +271,17 @@ class LlavaMetaForCausalLM(ABC):
                 image_features = new_image_features
             else:
                 raise ValueError(f"Unexpected mm_patch_merge_type: {self.config.mm_patch_merge_type}")
+# Go here
         else:
+            # print('L258')
+            # print('images.shape', images.shape) 336
             image_features, index_masks, image_attns = self.encode_images(images)
             new_image_features = []
             for image_feature, index_mask in zip(image_features, index_masks):
                 image_feature = image_feature[index_mask]
                 new_image_features.append(image_feature)
             image_features = torch.stack(new_image_features, dim=0)
+            # print('image_features.shape', image_features.shape)
 
         # TODO: image start / end is not implemented here to support pretraining.
         if getattr(self.config, 'tune_mm_mlp_adapter', False) and getattr(self.config, 'mm_use_im_start_end', False):

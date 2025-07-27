@@ -12,7 +12,7 @@ PARAM="n_${TOKEN}"
 
 for IDX in $(seq 0 $((CHUNKS-1))); do
     CUDA_VISIBLE_DEVICES=${GPULIST[$IDX]} python -W ignore -m llava.eval.model_vqa_loader \
-        --model-path /path/to/checkpoint/${CKPT} \
+        --model-path ./checkpoints/llava-v1.5-7b \
         --question-file ./playground/data/eval/vqav2/llava_vqav2_mscoco_test-dev2015.jsonl \
         --image-folder ./playground/data/eval/vqav2/test2015 \
         --answers-file ./playground/data/eval/vqav2/answers/${CKPT}/${METHOD}/${PARAM}/${CHUNKS}_${IDX}.jsonl \

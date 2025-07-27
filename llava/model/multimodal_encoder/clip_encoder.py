@@ -38,7 +38,7 @@ class CLIPVisionTower(nn.Module):
         image_attentions = image_forward_outs.attentions[self.select_layer]
         if self.select_feature == 'patch':
             image_features = image_features[:, 1:]
-            image_attentions = image_attentions[:, :, 0, 1:]
+            image_attentions = image_attentions[:, :, 0, 1:]    # choose attention score
         elif self.select_feature == 'cls_patch':
             image_features = image_features
             image_attentions = image_attentions
@@ -52,6 +52,8 @@ class CLIPVisionTower(nn.Module):
         if type(images) is list:
             image_features, image_attentions = [], []
             for image in images:
+                # Extract features AND attention scores from vit
+                #对单张或多张图片的特征提取，输出每张图片在指定层的特征和注意力分数
                 image_forward_out = self.vision_tower(image.to(device=self.device, dtype=self.dtype).unsqueeze(0), output_attentions=True, output_hidden_states=True)
                 image_feature, image_attention = self.feature_select(image_forward_out)
                 image_features.append(image_feature.to(image.dtype))

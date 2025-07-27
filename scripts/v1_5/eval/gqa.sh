@@ -12,7 +12,7 @@ PARAM="n_${TOKEN}"
 
 for IDX in $(seq 0 $((CHUNKS-1))); do
     CUDA_VISIBLE_DEVICES=${GPULIST[$IDX]} python -W ignore -m llava.eval.model_vqa_loader \
-        --model-path /path/to/checkpoint/${CKPT} \
+        --model-path ./checkpoints/llava-v1.5-7b \
         --question-file ./playground/data/eval/gqa/llava_gqa_testdev_balanced.jsonl \
         --image-folder ./playground/data/eval/gqa/data/images \
         --answers-file ./playground/data/eval/gqa/answers/${CKPT}/${METHOD}/${PARAM}/${CHUNKS}_${IDX}.jsonl \
@@ -39,4 +39,4 @@ done
 python scripts/convert_gqa_for_eval.py --src "$output_file" --dst ${GQADIR}/${CKPT}/${METHOD}/${PARAM}/testdev_balanced_predictions.json
 
 cd $GQADIR
-python eval/eval.py --tier testdev_balanced --method ${CKPT}/${METHOD}/${PARAM}
+python eval.py --tier testdev_balanced --method ${CKPT}/${METHOD}/${PARAM}

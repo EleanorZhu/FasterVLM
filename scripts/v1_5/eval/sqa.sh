@@ -6,7 +6,7 @@ TOKEN=${1}
 PARAM="n_${TOKEN}"
 
 python -W ignore -m llava.eval.model_vqa_science \
-    --model-path /path/to/checkpoint/${CKPT} \
+    --model-path ./checkpoints/llava-v1.5-7b \
     --question-file ./playground/data/eval/sqa/llava_test_CQM-A.json \
     --image-folder ./playground/data/eval/sqa/images/test \
     --answers-file ./playground/data/eval/sqa/answers/${CKPT}/${METHOD}/${PARAM}.jsonl \

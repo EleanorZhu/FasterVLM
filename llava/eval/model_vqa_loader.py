@@ -51,7 +51,9 @@ class CustomDataset(Dataset):
         prompt = conv.get_prompt()
 
         image = Image.open(os.path.join(self.image_folder, image_file)).convert('RGB')
+        # print("image size", image.size) 1024
         image_tensor = process_images([image], self.image_processor, self.model_config)[0]
+        # print("image_tensor size_after_process", image_tensor.shape) 336
 
         input_ids = tokenizer_image_token(prompt, self.tokenizer, IMAGE_TOKEN_INDEX, return_tensors='pt')
 
@@ -86,8 +88,11 @@ def eval_model(args):
     disable_torch_init()
     model_path = os.path.expanduser(args.model_path)
     model_name = get_model_name_from_path(model_path)
+    print('model_name', model_name)
     tokenizer, model, image_processor, context_len = load_pretrained_model(model_path, args.model_base, model_name, visual_token_num=args.visual_token_num)
-
+    
+    # print('model', model)
+    
     # Data
     questions = [json.loads(q) for q in open(os.path.expanduser(args.question_file), "r")]
     questions = get_chunk(questions, args.num_chunks, args.chunk_idx)
@@ -101,15 +106,21 @@ def eval_model(args):
 
     data_loader = create_data_loader(questions, args.image_folder, tokenizer, image_processor, model.config)
 
+    pruning_info_list = [] # 初始化列表以存储剪枝信息
+
     visual_token_nums = []
     data_bar = tqdm(zip(data_loader, questions), total=len(questions))
     for (input_ids, image_tensor, image_sizes), line in data_bar:
+        
+        # print('image_tensor', image_tensor.shape, image_tensor.dtype) 336
+
         idx = line["question_id"]
         cur_prompt = line["text"]
 
         input_ids = input_ids.to(device='cuda', non_blocking=True)
 
         with torch.inference_mode():
+            # print('L116', image_tensor.shape)
             output_ids, v_token_num, image_attns = model.generate(
                 input_ids,
                 images=image_tensor.to(dtype=torch.float16, device='cuda', non_blocking=True),
@@ -122,7 +133,30 @@ def eval_model(args):
                 use_cache=True)
         visual_token_nums.append(v_token_num)
         data_bar.set_postfix({"v_token_num": v_token_num})
+        
+        # ----- 修改后的代码：直接检索和保存剪枝信息 -----
+        # 假设 `model.model` 是在 `llava_arch.py` 中设置 `_last_index_mask` 等属性的那个模型组件。
+        # 这个路径取决于 `load_pretrained_model` 返回的 `model` 对象的具体结构。
+        internal_model_component = model.model # 请根据您的模型结构确认或调整此路径
 
+        retrieved_index_mask = internal_model_component._last_index_mask.squeeze(0).tolist()
+        retrieved_patch_grid_dims = internal_model_component._last_patch_grid_dims
+        
+        processed_image_shape = tuple(image_tensor.shape[2:]) # H_proc, W_proc
+        image_file_name = line["image"] #
+
+        current_pruning_info = {
+            "question_id": idx,
+            "image_file": image_file_name,
+            "original_image_size": image_sizes[0], # (宽度, 高度)
+            "processed_image_shape": processed_image_shape,
+            "patch_grid_dims": retrieved_patch_grid_dims,
+            "kept_patch_indices_mask": retrieved_index_mask,
+        }
+        pruning_info_list.append(current_pruning_info)
+        # print(pruning_info_list)
+        # ----- 修改后的代码结束 -----
+        
         outputs = tokenizer.batch_decode(output_ids, skip_special_tokens=True)[0].strip()
 
         ans_id = shortuuid.uuid()
@@ -134,6 +168,15 @@ def eval_model(args):
                                    "metadata": {}}) + "\n")
         # ans_file.flush()
     ans_file.close()
+
+    # pruning_info_file = os.path.join(os.path.dirname(args.answers_file), "pruning_instructions.json")
+    # try:
+    #     with open(pruning_info_file, "w") as f_prune:
+    #         json.dump(pruning_info_list, f_prune, indent=2)
+    #     print(f"剪枝指令已成功保存到 {pruning_info_file}")
+    # except Exception as e:
+    #     print(f"保存剪枝指令到 {pruning_info_file} 时出错: {e}")
+        
     avg_token_num = sum(visual_token_nums) / len(visual_token_nums)
     print(f"Average number of visual tokens: {avg_token_num}")
 
