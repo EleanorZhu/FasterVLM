@@ -1,12 +1,13 @@
 #!/bin/bash
 
+# set -e
 CKPT="llava-v1.5-7b"
 METHOD="fastervlm"
 TOKEN=${1}
 PARAM="n_${TOKEN}"
 
 python -W ignore -m llava.eval.model_vqa_loader \
-    --model-path ./checkpoints/llava-v1.5-7b \
+    --model-path /home/qingchan/project/FasterVLM/checkpoints/${CKPT} \
     --question-file ./playground/data/eval/textvqa/llava_textvqa_val_v051_ocr.jsonl \
     --image-folder ./playground/data/eval/textvqa/train_images \
     --answers-file ./playground/data/eval/textvqa/answers/${CKPT}/${METHOD}/${PARAM}.jsonl \

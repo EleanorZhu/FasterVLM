@@ -17,7 +17,7 @@ from abc import ABC, abstractmethod
 
 import torch
 import torch.nn as nn
-
+import math
 from .multimodal_encoder.builder import build_vision_tower
 from .multimodal_projector.builder import build_vision_projector
 
@@ -139,29 +139,34 @@ class LlavaMetaForCausalLM(ABC):
 
     # FasterVLM
     def encode_images(self, images):
-        ### 获取所有视觉 token feature 和 attention score
+        
+        # print('images.shape', images.shape)
+        
         image_features, image_attentions = self.get_model().get_vision_tower()(images) # (B, N, C), (B, M, N) = (1, 576, 1024), (1, 16, 576)
+        
+        # print('image_features.shape', image_features.shape)
+        # print('image_attentions.shape', image_attentions.shape)
 
         # image_attentions = image_attentions.max(dim=1)[0] # (B, N) = (1, 576)
         image_attentions = image_attentions.mean(dim=1) # (B, N) = (1, 576)
 
         B, N = image_features.shape[:2]
-        visual_token_num = self.get_visual_token_num() # T: 保留的token数量
+        visual_token_num = self.get_visual_token_num() # T
 
         # prune visual tokens by random scores
         # token_weights = torch.rand(B, N, device=image_features.device) # (B, N)
-        # token_indices = torch.topk(token_weights, k=visual_token_num, dim=1)[1] ### (B, T) 保留attention分数最高的T个token
+        # token_indices = torch.topk(token_weights, k=visual_token_num, dim=1)[1] # (B, T)
         # token_indices = torch.sort(token_indices, dim=1)[0] # (B, T)
 
-        ### prune visual tokens by attention scores
+        # prune visual tokens by attention scores
         token_indices = torch.topk(image_attentions, k=visual_token_num, dim=1)[1] # (B, T)
         token_indices = torch.sort(token_indices, dim=1)[0] # (B, T)
 
-        ### generate index mask
-        # 相关方法如`encode_images`，会根据 attention 权重生成 index mask，决定哪些视觉 token 送入后续模块。
-        index_mask = torch.zeros(B, N, dtype=torch.bool, device=image_features.device) # (B, N)
-        index_mask.scatter_(1, token_indices, True) # (B, N)   
 
+
+        # generate index mask
+        index_mask = torch.zeros(B, N, dtype=torch.bool, device=image_features.device) # (B, N)
+        index_mask.scatter_(1, token_indices, True) # (B, N)
         # ----- 新增代码：存储 index_mask 和 patch_grid_dims -----
         # 假设 self.get_model() 返回的是可以设置属性的 LLaVA 模型实例
         # 例如，在 LlavaLlamaModel 或类似的模型类中
@@ -181,13 +186,13 @@ class LlavaMetaForCausalLM(ABC):
 
         # ----- 新增代码结束 -----
 
-        #image_features = self.get_model().mm_projector(image_features) # (B, N, D)
+
+        # image_features = self.get_model().mm_projector(image_features) # (B, N, D)
         image_features = target_model_component.mm_projector(image_features) # (B, N, D)
         
         return image_features, index_mask, image_attentions
 
-     # FasterVLM
-     # Prune visual tokens according to index masks
+    # FasterVLM
     def prepare_inputs_labels_for_multimodal(
         self, input_ids, position_ids, attention_mask, past_key_values, labels,
         images, image_sizes=None

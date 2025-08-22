@@ -217,7 +217,7 @@ def process_images(images, image_processor, model_cfg):
     # # 8. 保存图片
     # try:
     #     tmp = random.randint(1, 100)
-    #     file_path = f"/home/qingchan/project/FasterVLM/tmp_imgs/output_image_pil_{tmp}.png"
+    #     file_path = f"/nfs/cyang9/FasterVLM/tmp_imgs/output_image_pil_{tmp}.png"
     #     pil_image.save(file_path)
     #     print(f"图片已使用 PIL 保存到: {file_path}")
     # except Exception as e:

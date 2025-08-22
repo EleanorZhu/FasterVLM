@@ -253,6 +253,9 @@ class TextVQAAccuracyEvaluator:
             score = unique_answer_scores.get(pred_answer, 0.0)
             pred_scores.append(score)
 
+        if len(pred_scores) == 0:
+            print("Warning: No predictions to evaluate. Returning accuracy 0.0")
+            return 0.0
         accuracy = sum(pred_scores) / len(pred_scores)
         return accuracy
 
@@ -269,6 +272,9 @@ class STVQAAccuracyEvaluator:
             score = 1.0 if pred_answer in gts else 0.0
             pred_scores.append(score)
 
+        if len(pred_scores) == 0:
+            print("Warning: No predictions to evaluate. Returning accuracy 0.0")
+            return 0.0
         accuracy = sum(pred_scores) / len(pred_scores)
         return accuracy
 
@@ -294,6 +300,9 @@ class STVQAANLSEvaluator:
             )
             pred_scores.append(anls)
 
+        if len(pred_scores) == 0:
+            print("Warning: No predictions to evaluate. Returning accuracy 0.0")
+            return 0.0
         accuracy = sum(pred_scores) / len(pred_scores)
         return accuracy
 
