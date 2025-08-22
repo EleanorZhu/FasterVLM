@@ -33,6 +33,12 @@ checkpoints/
 playground/data/
 tmp_imgs/
 
+# Allow placeholders and docs under eval (but keep large data ignored)
+!playground/data/eval/
+!playground/data/eval/README.md
+!playground/data/eval/.gitkeep
+!playground/data/eval/**/.gitkeep
+
 # IDE
 .vscode/
 .idea/
