@@ -52,6 +52,7 @@ Thumbs.db
 # Logs
 *.log
 logs/
+wandb/
 
 # Environment
 .env
@@ -61,3 +62,4 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
