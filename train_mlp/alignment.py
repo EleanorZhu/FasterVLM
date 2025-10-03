@@ -139,11 +139,10 @@ def combined_alignment_loss(
     pred: torch.Tensor,
     target: torch.Tensor,
     lambda_cos: float = 1.0,
-    mu_mse: float = 0.25,
+    mu_mse: float = 1.0,
 ) -> torch.Tensor:
     """
     Combined loss for alignment: L = lambda_cos * cosine_loss + mu_mse * MSE
-    Defaults: lambda_cos=1.0, mu_mse=0.25
     """
     cos_loss = cosine_alignment_loss(pred, target)
     mse_loss = F.mse_loss(pred.float(), target.float())

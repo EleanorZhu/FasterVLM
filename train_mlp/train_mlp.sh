@@ -15,17 +15,17 @@ OUTPUT_DIR="../checkpoints/contrastive-mlp-cc"
 # Hyperparameters per README
 EPOCHS=100
 BATCH_SIZE=64
-LR=1e-4
-WARMUP_RATIO=0.03
+LR=5e-5
+WARMUP_RATIO=0.02
 WEIGHT_DECAY=0.01
 
 # Residual architecture (recommended to meet >0.99 cosine and <0.1 MSE)
-MLP_NUM_BLOCKS=6          # 0 keeps original 2-layer MLP; 6 enables deeper residual adapters
-MLP_BOTTLENECK=1024       # 5120 -> 1024 -> 5120 bottleneck inside adapters
-MLP_ACTIVATION="relu"     # relu|gelu
-MLP_FINAL_LN=true         # apply final LayerNorm after adapters
-MLP_OUT_ZERO_INIT=true    # zero-init final projection for stability
-MLP_DROPOUT=0.1           # dropout used inside adapters (and legacy path)
+MLP_NUM_BLOCKS=2          # 0 keeps original 2-layer MLP; 
+MLP_BOTTLENECK=2048       # 5120 -> 1024 -> 5120 bottleneck inside adapters
+MLP_ACTIVATION="gelu"     # relu|gelu
+MLP_FINAL_LN=false         # apply final LayerNorm after adapters
+MLP_OUT_ZERO_INIT=false    # zero-init final projection for stability
+MLP_DROPOUT=0.0           # dropout used inside adapters (and legacy path)
 
 # Logging
 export WANDB_PROJECT="fastervlm-contrastive"

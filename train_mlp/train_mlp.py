@@ -186,6 +186,7 @@ def main():
                         wandb.log({'train/loss': loss.detach().float().item(),
                                    'train/cosine_similarity': cos,
                                    'train/mse': mse,
+                                   'train/lr': scheduler.get_last_lr()[0],
                                    'step': global_step})
                     print(f"epoch {epoch} step {global_step}: loss={loss.detach().float().item():.4f} cos={cos:.4f} mse={mse:.6f}")
 

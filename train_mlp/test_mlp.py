@@ -17,8 +17,8 @@ CUR_DIR = Path(__file__).resolve().parent
 if str(CUR_DIR) not in sys.path:
     sys.path.insert(0, str(CUR_DIR))
 
-from alignment import MLPAlignment  # noqa: E402
-from train_mlp import PrecomputedPairs  # noqa: E402
+from alignment import MLPAlignment  
+from train_mlp import PrecomputedPairs  
 
 
 def evaluate_batch(mlp: torch.nn.Module, x: torch.Tensor, y: torch.Tensor) -> Dict[str, float]:
@@ -46,7 +46,7 @@ def main():
     parser = argparse.ArgumentParser(description="Evaluate MLP alignment checkpoint on precomputed pairs")
     parser.add_argument("--checkpoint_path", type=str, required=True, help="Path to checkpoint .pt file")
     parser.add_argument("--dataset_path", type=str, required=True, help="Folder containing .pt files with keys {x, y}")
-    parser.add_argument("--batch_size", type=int, default=256)
+    parser.add_argument("--batch_size", type=int, default=64)
     parser.add_argument("--seed", type=int, default=42, help="Random seed for reproducible split")
     parser.add_argument("--dataloader_num_workers", type=int, default=0, help="DataLoader workers (0 avoids shm issues)")
     parser.add_argument("--verbose", action="store_true", help="Print per-batch stats")

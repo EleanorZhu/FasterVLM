@@ -85,3 +85,41 @@ python train_mlp.py \
 Artifacts:
 - Latest: `../checkpoints/contrastive-mlp-cc/mlp_alignment.pt`
 - Periodic checkpoints under `../checkpoints/contrastive-mlp-cc/checkpoint-*/`
+
+## Step 3 — Evaluate a trained MLP checkpoint
+
+Use the evaluation script to compute cosine similarity, MSE, and contrastive loss on the validation/test split of your precomputed pairs. The script automatically reconstructs the MLP architecture from the checkpoint’s saved training args (e.g., residual adapter settings), so you don’t need to pass model flags again.
+
+Required arguments:
+- `--checkpoint_path`: Path to a saved checkpoint (e.g., best_mlp_alignment.pt)
+- `--dataset_path`: Folder containing the precomputed pair `.pt` files with keys `{x, y}`
+
+Optional arguments:
+- `--batch_size` (default: 256)
+- `--seed` (default: 42)
+- `--dataloader_num_workers` (default: 0)
+- `--verbose` (print per-batch stats)
+- `--output_json` (path to write JSON summary; defaults beside the checkpoint)
+
+Examples:
+
+From the repository root:
+```bash
+python train_mlp/test_mlp.py \
+  --checkpoint_path checkpoints/contrastive-mlp-cc/best_mlp_alignment.pt \
+  --dataset_path playground/data/CC_pairs/pairs \
+  --batch_size 64
+```
+
+From inside the train_mlp/ directory:
+```bash
+cd train_mlp/
+python test_mlp.py \
+  --checkpoint_path ../checkpoints/contrastive-mlp-cc/best_mlp_alignment.pt \
+  --dataset_path ../playground/data/CC_pairs/pairs \
+  --batch_size 64
+```
+
+Output:
+- Console summary of mean/std for cosine similarity, MSE, and contrastive loss
+- A JSON report saved next to the checkpoint (or to `--output_json` if provided)
