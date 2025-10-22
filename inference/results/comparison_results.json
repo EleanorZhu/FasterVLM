@@ -1,0 +1,1402 @@
+[
+  {
+    "image_id": "001166603",
+    "prompt": "Render a clear and concise summary of the photo.",
+    "ground_truth": "a table with several hospital services, including beds, chairs and hospitals",
+    "mlp_generated": "The image is a collage of various medical-related topics, including biological hazards, radiation hazards, and medical treatments. The collage consists of several pictures, with one of them showing a person in a hospital bed. The other pictures depict different medical equipment and procedures, such as a bed with a person lying down, a person wearing a white shirt, and a bed with a person sitting up. The collage is designed to provide an overview of medical topics and their importance in healthcare.",
+    "baseline_generated": "The image is a collage of various medical-related topics, including biological hazards, radiation hazards, and identification at workplace. The collage consists of several pictures and text boxes, providing information on the subjects. The pictures are arranged in a way that they are easily accessible and can be quickly understood by the viewer. The collage is designed to educate and inform people about the importance of safety measures and precautions in the medical field."
+  },
+  {
+    "image_id": "000074026",
+    "prompt": "Present a compact description of the photo's key features.",
+    "ground_truth": "a young girl in an exotic floral dress leans against the railing as she looks into the camera",
+    "mlp_generated": "The image features a young girl with long hair, wearing a colorful dress, standing next to a metal pole. She is posing for a picture, and there are pink flowers in the background, adding a touch of color to the scene. The girl appears to be enjoying her time outdoors, possibly at a park or a similar location.",
+    "baseline_generated": "The image features a young girl posing for a picture while leaning on a metal railing. She is wearing a colorful dress and has her hair in a ponytail. The girl is positioned in front of a flower bush, which adds a touch of natural beauty to the scene. The flowers in the bush are pink, and they create a pleasant contrast with the girl's outfit. The overall atmosphere of the photo is cheerful and lively."
+  },
+  {
+    "image_id": "001291729",
+    "prompt": "Share a concise interpretation of the image provided.",
+    "ground_truth": "venezuela flowers - dows 10 porto and goodies gift basket flower delivery",
+    "mlp_generated": "The image features a wicker basket filled with various items, including a bottle of wine, a box of chocolates, and a jar of jam. The wine bottle is placed in the center of the basket, while the chocolates and jam are positioned around it. The chocolates are arranged in a way that they are partially covering the wine bottle, creating an appealing presentation. The basket is placed on a table, making it an attractive centerpiece for a gathering or a thoughtful gift.",
+    "baseline_generated": "The image features a wicker basket filled with various items, including a bottle of wine, a jar of jam, and a box of chocolates. The wine bottle is placed in the center of the basket, while the jar of jam is located towards the right side. The box of chocolates is situated on the left side of the basket. The arrangement of these items creates an inviting and cozy atmosphere, perfect for a relaxing evening or a thoughtful gift."
+  },
+  {
+    "image_id": "005326081",
+    "prompt": "Share a concise interpretation of the image provided.",
+    "ground_truth": "the oklahoma state wolfs basketball team, from left, tyler teal and anthony jones, play against the",
+    "mlp_generated": "The image captures a basketball game in progress, with two men on the court. One of the players is holding the basketball, preparing to shoot it. The other player is attempting to block the shot, displaying his defensive skills. \n\nThere are several other people in the scene, likely teammates, opponents, or spectators. Some of them are standing near the court, while others are further away, watching the game unfold. The atmosphere is energetic and competitive, as the players engage in the sport.",
+    "baseline_generated": "The image captures a basketball game in progress, with two men on the court. One of the players is holding a basketball and appears to be shooting a free throw. The other player is standing nearby, possibly preparing to defend or assist in the play.\n\nThere are several other people in the scene, likely teammates, opponents, or spectators. Some of them are standing close to the court, while others are further away. The atmosphere seems to be lively and competitive, as the players engage in the game."
+  },
+  {
+    "image_id": "003173048",
+    "prompt": "Write a terse but informative summary of the picture.",
+    "ground_truth": "a cloud over mt bromo in indonesia, seen from the top of mount bromo",
+    "mlp_generated": "The image captures a breathtaking view of a mountain range with a thick fog covering the landscape. The mountains are shrouded in mist, creating a mystical atmosphere. The scene is further enhanced by the presence of a volcano in the distance, adding to the dramatic and picturesque setting. The foggy mountain range is a beautiful sight, inviting viewers to appreciate the natural beauty of the area.",
+    "baseline_generated": "The image features a mountainous landscape with a foggy atmosphere. The mountains are covered in fog, giving them a mystical appearance. The scene is set against a blue sky, which contrasts with the foggy landscape. The mountains are surrounded by trees, adding to the natural beauty of the scene. The overall mood of the image is serene and captivating."
+  },
+  {
+    "image_id": "003890762",
+    "prompt": "Render a clear and concise summary of the photo.",
+    "ground_truth": "bill burrer, a famous american pop singer, has died at the age of 71",
+    "mlp_generated": "The image features a man wearing a hat and a shirt, sitting in front of a wall. He appears to be smiling and looking at the camera, possibly posing for a picture. The man's attire includes a hat and a shirt, which adds a casual and relaxed vibe to the scene.",
+    "baseline_generated": "The image features a man wearing a hat and a shirt, sitting in front of a wall. He appears to be smiling and looking at the camera. The man is positioned in the center of the scene, and the wall behind him is visible in the background."
+  },
+  {
+    "image_id": "006138060",
+    "prompt": "Give a brief description of the image.",
+    "ground_truth": "a set of three starbucks badge patches",
+    "mlp_generated": "The image features a collection of four Starbucks coffee coasters, each with a different color and design. The coasters are arranged in a row, with one on the left, one in the middle, one on the right, and one at the far right. The coasters are placed on a table, showcasing the variety of colors and designs.",
+    "baseline_generated": "The image features a table with four different colored Starbucks coffee coasters placed on it. The coasters are green, red, black, and white, each with a unique design. The table is covered with a striped cloth, providing a visually appealing background for the coasters. The arrangement of the coasters showcases the variety of colors and designs available for Starbucks coffee enthusiasts."
+  },
+  {
+    "image_id": "001733889",
+    "prompt": "Present a compact description of the photo's key features.",
+    "ground_truth": "prince on stage at the rainbow ball in st petersburg, russia, on may 22, 2013",
+    "mlp_generated": "The image features a man wearing a blue and orange suit, standing on stage and holding a guitar. He appears to be a musician, possibly a rock star, as he is playing the guitar and singing. The man is the main focus of the scene, and his outfit and guitar make him stand out.",
+    "baseline_generated": "The image features a man standing on a stage, holding a guitar and playing it. He is wearing a blue jacket and an orange shirt, giving him a unique and eye-catching appearance. The man appears to be the main focus of the scene, with the guitar being the central object in his hands.\n\nIn the background, there are several other people present, possibly as part of the audience or other performers. The stage is illuminated with a blue light, creating a captivating atmosphere for the performance."
+  },
+  {
+    "image_id": "002659677",
+    "prompt": "Present a compact description of the photo's key features.",
+    "ground_truth": "two - tone knit jumper with graffiti logo",
+    "mlp_generated": "The image features a woman wearing a black and white sweater, standing in a white background. She is posing for the camera, showcasing her outfit. The sweater has a unique design, with a large white letter \"A\" on the front. The woman's pose and the sweater's design make the image visually appealing and stylish.",
+    "baseline_generated": "The image features a woman wearing a black sweater with a white collar, standing in a white background. She is posing for the camera, showcasing her outfit. The woman appears to be the main focus of the scene, and the overall composition is simple and elegant."
+  },
+  {
+    "image_id": "000810037",
+    "prompt": "What is in the photo?",
+    "ground_truth": "the 10 best - ever anxiety management techniques",
+    "mlp_generated": "The photo features a field of flowers, with a close-up of a flower and a branch.",
+    "baseline_generated": "The photo features a field of yellow flowers, with a close-up of a flower branch."
+  },
+  {
+    "image_id": "006386468",
+    "prompt": "Provide a brief description of the given image.",
+    "ground_truth": "the operating and operations manual for the systems described in the software manual operating manuals, fourth edition",
+    "mlp_generated": "The image features a blue and red background with white text. The text reads \"Operating System Support\" in bold letters, indicating the focus of the image. The text is placed in the center of the image, with a slightly larger font size on the top part of the image.",
+    "baseline_generated": "The image features a white background with a blue and red title, \"Operating System Support.\" The text is written in a large font, making it easy to read. The focus of the image is on the title, which is the main subject of the scene."
+  },
+  {
+    "image_id": "000090440",
+    "prompt": "Present a compact description of the photo's key features.",
+    "ground_truth": "an open plan living room with white walls and wooden furniture",
+    "mlp_generated": "The image depicts a clean and well-organized living room with a white color scheme. The room features a large window, which allows natural light to fill the space. A comfortable couch is placed in the room, accompanied by a coffee table and a bench. A chair is also present in the room, providing additional seating options.\n\nThere are several decorative elements in the room, including a potted plant, a vase, and a bowl. A sports ball is placed on the floor, adding a touch of playfulness to the space. A TV is mounted on the wall, providing entertainment for the occupants. The room is well-lit, creating a bright and inviting atmosphere.",
+    "baseline_generated": "The image depicts a cozy living room with a large window that allows natural light to fill the space. The room features a comfortable couch situated in the middle, surrounded by a few chairs. A coffee table is placed in front of the couch, and a rug adds warmth to the floor. \n\nIn addition to the seating area, the room is decorated with various potted plants, some of which are placed on the floor and others on the windowsill. A vase can be seen on the coffee table, and a sports ball is located near the right side of the room. The overall atmosphere of the living room is inviting and well-organized."
+  },
+  {
+    "image_id": "005927286",
+    "prompt": "Give a short and clear explanation of the subsequent image.",
+    "ground_truth": "an apple is a great way to use the apple activities for the whole family to learn how apples make them",
+    "mlp_generated": "The image features a large red apple with a green leaf on it, which is the main focus of the scene. The apple is placed in the center of the image, and it appears to be a cartoon or stylized representation. The apple is labeled with the words \"Apple Activities,\" suggesting that it might be related to a game or educational activity involving apples.",
+    "baseline_generated": "The image features a large red apple with a green leaf on top, which is the main focus of the scene. The apple is placed in front of a white background, making it stand out. The apple is also labeled with the words \"Apple Activities,\" suggesting that it might be related to educational or recreational activities involving apples."
+  },
+  {
+    "image_id": "006188485",
+    "prompt": "Describe the image concisely.",
+    "ground_truth": "adam henry",
+    "mlp_generated": "The image features a man wearing a green shirt and a white hat, possibly a baseball cap. He is holding a sports ball, which appears to be a rugby ball, in his hands. The man is looking at the camera, possibly posing for a picture. The scene suggests that he is a rugby player or a sports enthusiast.",
+    "baseline_generated": "The image features a man wearing a green shirt and a white hat, possibly a rugby player. He is holding a sports ball, possibly a rugby ball, in his hands. The man appears to be looking at the camera, possibly posing for a picture. The scene takes place in a stadium, with a bench visible in the background."
+  },
+  {
+    "image_id": "000185623",
+    "prompt": "Summarize the visual content of the image.",
+    "ground_truth": "the first loading area at the port of shanghai is now open",
+    "mlp_generated": "The image features a large harbor with a variety of boats and cranes. There are several boats of different sizes scattered throughout the scene, with some closer to the foreground and others further away. A prominent feature of the harbor is the presence of multiple cranes, with some located near the water's edge and others situated further back.\n\nIn addition to the boats and cranes, there are also a few trucks visible in the scene, likely used for transportation or support purposes. The overall atmosphere of the image is that of a busy and active harbor, with various vessels and equipment in use.",
+    "baseline_generated": "The image features a large body of water with a long pier extending out into the water. On the pier, there are several large cranes and a boat docked. The cranes are positioned at various points along the pier, with some closer to the water's edge and others further back.\n\nIn the background, there are multiple boats of different sizes scattered across the water. Some boats are closer to the pier, while others are further away, creating a lively scene of maritime activity."
+  },
+  {
+    "image_id": "002786642",
+    "prompt": "Provide a brief description of the given image.",
+    "ground_truth": "the two spheres table lamp with an aged bronze finish and white fabric shade",
+    "mlp_generated": "The image features a modern-looking lamp with a white shade sitting on a glass table. The lamp has a unique design, with a gold base and a silver shade. The table is positioned in front of a wall, and there is a chair nearby. \n\nIn addition to the lamp, there are two decorative items on the table: a gold and silver bowl and a gold and silver ring. The combination of these items creates an elegant and stylish atmosphere in the room.",
+    "baseline_generated": "The image features a modern-looking lamp with a white shade, placed on a glass table. The lamp has a unique design, with a gold base and a silver body. The table is positioned in front of a wall, and there is a chair nearby. \n\nIn addition to the lamp, there is a decorative bowl on the table, adding to the overall aesthetic of the scene. The combination of the lamp, table, and bowl creates a stylish and contemporary atmosphere."
+  },
+  {
+    "image_id": "006533174",
+    "prompt": "Describe the image concisely.",
+    "ground_truth": "abba forever live in concert dvd",
+    "mlp_generated": "The image features a concert poster advertising an Abba Forever live concert. The poster showcases a group of four women dressed in gold and white, singing and performing on stage. They are accompanied by a band, with several musicians visible in the background.\n\nThe concert poster is adorned with lights, giving it a lively and energetic appearance. The women are positioned in various locations on the poster, with some standing closer to the front and others further back. The overall scene captures the excitement and entertainment of the live concert experience.",
+    "baseline_generated": "The image features a concert poster advertising an Abba Forever live concert. The poster showcases a group of four women dressed in gold and white, singing and performing on stage. They are accompanied by a band, with several musicians playing various instruments such as guitars, drums, and a keyboard.\n\nThe concert poster is adorned with lights, giving the impression of a lively and energetic performance. The musicians are spread across the stage, with some standing closer to the front and others further back, creating a dynamic and engaging visual experience for the audience."
+  },
+  {
+    "image_id": "001323057",
+    "prompt": "Give a brief description of the image.",
+    "ground_truth": "a man standing wearing a black peacoat and tie",
+    "mlp_generated": "The image features a man wearing a black coat with buttons, standing in a room. He is positioned in the center of the frame, and his coat is open, revealing a white shirt underneath. The man appears to be posing for the camera, and his attire suggests a formal or professional setting.",
+    "baseline_generated": "The image features a man wearing a black coat with buttons, standing in a white background. He appears to be dressed in business attire, possibly for a formal event or a professional setting. The man's posture and the overall composition of the image suggest that he is confidently posing for the picture."
+  },
+  {
+    "image_id": "003411076",
+    "prompt": "Render a clear and concise summary of the photo.",
+    "ground_truth": "kinect sports season two xbox360 - 01",
+    "mlp_generated": "The image features a video game cover for Kinect Sports Season Two, which is a sports-themed game. The cover showcases various sports activities, including baseball, tennis, and football. There are multiple sports balls and tennis rackets scattered throughout the image, emphasizing the game's focus on sports.\n\nIn addition to the sports equipment, there are several people present in the image, likely representing the players or characters in the game. Some of them are holding sports balls, while others are engaged in different activities. The overall scene conveys the excitement and fun of playing Kinect Sports Season Two.",
+    "baseline_generated": "The image features a video game cover for Kinect Sports Season Two, which is a sports-themed game for the Xbox 360 console. The cover showcases various sports activities, including baseball, tennis, and bowling. There are multiple sports balls and tennis rackets visible on the cover, emphasizing the game's focus on sports. The cover also includes a man and a woman, likely representing the players in the game."
+  },
+  {
+    "image_id": "001146267",
+    "prompt": "Give a short and clear explanation of the subsequent image.",
+    "ground_truth": "the matterhorn in winter time",
+    "mlp_generated": "The image features a snow-covered mountain range with a large peak towering over the landscape. The mountain is surrounded by a vast expanse of snow, creating a breathtaking winter scene. The sky above the mountain range is blue, adding to the beauty of the scene. The mountain's peak is visible in the distance, and the overall atmosphere is serene and majestic.",
+    "baseline_generated": "The image features a snow-covered mountain with a large peak, towering over the surrounding landscape. The mountain is covered in snow, and the sky above it is blue and cloudy. The scene is breathtaking, showcasing the beauty of nature and the majestic presence of the mountain."
+  },
+  {
+    "image_id": "003966714",
+    "prompt": "Give a short and clear explanation of the subsequent image.",
+    "ground_truth": "wedding cupcakes and cake at a reception",
+    "mlp_generated": "The image features a table with a beautifully decorated cake and a plate of cupcakes. The cake is placed on a stand, and it is surrounded by a variety of cupcakes. The cupcakes are arranged in different positions around the cake, with some closer to the cake and others further away. The table setting creates an inviting atmosphere for a celebration or gathering.",
+    "baseline_generated": "The image features a table with a white cake as the centerpiece, surrounded by a variety of cupcakes. The cake is placed on a stand, and the cupcakes are arranged on a tray and a plate. The cupcakes come in different sizes and are decorated with blue and orange frosting. The table is set up for a celebration, with the cake and cupcakes being the main focus of the event."
+  },
+  {
+    "image_id": "001472647",
+    "prompt": "Share a concise interpretation of the image provided.",
+    "ground_truth": "tablet and mobile phone hands vector | price png",
+    "mlp_generated": "The image is a collection of nine different electronic devices, including laptops, tablets, and cell phones. Each device is shown with a hand interacting with it, either pressing a button or touching the screen. The devices are arranged in a grid-like pattern, with each device occupying a separate space. The hand positions are varied, with some hands pointing downwards, others pointing upwards, and a few hands touching the screen. The scene illustrates the different ways people interact with electronic devices in their daily lives.",
+    "baseline_generated": "The image features a collection of various electronic devices, including cell phones, tablets, and laptops. There are six cell phones, each with different sizes and positions, and four tablets, each with distinct shapes and sizes. Additionally, there are three laptops, each with unique designs and sizes.\n\nThe devices are arranged in a visually appealing manner, with some overlapping and others placed next to each other. The scene showcases the diversity and evolution of technology in the form of these electronic devices."
+  },
+  {
+    "image_id": "002348972",
+    "prompt": "Give a short and clear explanation of the subsequent image.",
+    "ground_truth": "air zoom basketball shoes for men",
+    "mlp_generated": "The image features a blue and red Nike shoe with a white sole. The shoe is placed on a white background, making it the main focus of the scene. The shoe appears to be a sneaker, possibly designed for sports or athletic activities.",
+    "baseline_generated": "The image features a blue and red Nike shoe with a white sole. The shoe is placed on a white background, making it the main focus of the scene. The shoe's design is visually appealing, and it appears to be a sports shoe, possibly intended for running or other athletic activities."
+  },
+  {
+    "image_id": "002060874",
+    "prompt": "Give a brief description of the image.",
+    "ground_truth": "a bottle of tous parfum perfume",
+    "mlp_generated": "The image features a bottle of Tous perfume, which is a yellow bottle with a gold top. The bottle is placed on a white background, making it the main focus of the scene. The perfume is likely a cologne or scent for women, as it is displayed prominently in the image.",
+    "baseline_generated": "The image features a tall, slender bottle of perfume with a gold bear on top. The bottle is made of clear glass, allowing the viewer to see the contents inside. The bear on top of the bottle adds a playful and charming touch to the overall design. The bottle is placed against a white background, which highlights its elegant and sophisticated appearance."
+  },
+  {
+    "image_id": "004738219",
+    "prompt": "What is this?",
+    "ground_truth": "a view from the top of the hancock building long sleeve t - shirt",
+    "mlp_generated": "The image features a black shirt with a picture of a city skyline at night. The shirt is on display, showcasing the cityscape design. The city lights are illuminated, creating a vibrant and lively atmosphere in the image. The shirt is likely meant to be a fashionable and stylish choice for those who appreciate urban landscapes and nighttime city views.",
+    "baseline_generated": "The image features a black t-shirt with a picture of a city skyline on it. The cityscape is displayed prominently on the front of the shirt, showcasing the urban landscape at night. The shirt is designed to be long-sleeved, providing a comfortable and stylish fit for the wearer."
+  },
+  {
+    "image_id": "003385081",
+    "prompt": "What is this?",
+    "ground_truth": "a review sheet of federally molinaria america, a north mexicanocraticarctile artichiac",
+    "mlp_generated": "This is a scientific paper titled \"A Review of Virbia (formerly Hololemia) of America (North of Mexico) (Arctiidae: Arctinidae)\". It is published in the Florida Museum of Natural History Bulletin, which is a peer-reviewed journal that focuses on various aspects of natural history, including taxonomy, systematics, and ecology. The paper discusses the classification and distribution of the Virbia species in North America, providing valuable information for researchers and naturalists interested in the subject.",
+    "baseline_generated": "The image features a bulletin from the Florida Museum of Natural History. The bulletin is titled \"A Review of Fibrilaria (Fibromiidae) from North America, North Mexico, and the Arctic (Arctocephalus)\" and is written by S. M. Zibin, W. E. Wagner, and R. T. Card. The bulletin is likely discussing the classification and characteristics of a specific group of organisms found in North America and the Arctic region."
+  },
+  {
+    "image_id": "001207467",
+    "prompt": "Provide a brief description of the given image.",
+    "ground_truth": "motorcycle oil filter fits for kawasaki and hurinr models",
+    "mlp_generated": "The image features a close-up view of a black air filter, which is sitting on a white surface. The air filter is placed on top of a circular base, and it appears to be a part of a motorcycle or a similar vehicle. The filter is made up of multiple layers, providing an efficient filtration system for the engine.",
+    "baseline_generated": "The image features a close-up view of a black air filter, which is sitting on a white surface. The air filter is circular in shape and appears to be made of paper. The filter is placed on a white background, which highlights its shape and texture."
+  },
+  {
+    "image_id": "006418906",
+    "prompt": "Give a short and clear explanation of the subsequent image.",
+    "ground_truth": "china's hottest line interactive ups controller with multiphater and two outputs",
+    "mlp_generated": "The image features a black box with a blue logo, likely a power expert product. The box has a control panel with a display and multiple buttons, including a power button and a reset button. The device appears to be a power supply or a control unit for various electronic devices. The box is placed on a white background, making the product stand out.",
+    "baseline_generated": "The image features a black box with a green power button on the front. The box appears to be a power expert device, possibly a power inverter or a power supply. The device is designed to provide power to various electronic devices, ensuring their proper functioning. The green power button is the main control for the device, allowing users to turn it on or off."
+  },
+  {
+    "image_id": "001101499",
+    "prompt": "Describe the image concisely.",
+    "ground_truth": "minnie mouse ears invitations",
+    "mlp_generated": "The image features a Mickey Mouse invitation for a birthday party. The invitation is designed with a Mickey Mouse head and a bow on top, giving it a festive and playful appearance. The party details are written in red, making them stand out against the white background. The invitation is addressed to \"Yasmin,\" and the event is scheduled for Saturday, July 9th, from 2:00 to 4:00 pm.",
+    "baseline_generated": "The image features a Mickey Mouse-themed birthday invitation, which is shaped like a Mickey Mouse head. The invitation is addressed to Amanda and is for a birthday party on Saturday, July 9th. The invitation is written in red and black, and it is placed on a white background. The Mickey Mouse head is the central focus of the invitation, making it a fun and playful design for the birthday celebration."
+  },
+  {
+    "image_id": "001818713",
+    "prompt": "Give a brief description of the image.",
+    "ground_truth": "the hit by david baldacci",
+    "mlp_generated": "The image features a man and a woman standing next to each other on a building ledge. The woman is positioned to the left of the man, and both of them are dressed in black. The man is wearing a tie, which is visible in the scene. They appear to be posing for a picture or simply enjoying the view from the elevated position.",
+    "baseline_generated": "The image features a book cover with a man and a woman standing next to each other, both holding guns. The woman is on the left side of the man, and they appear to be in a defensive stance. The book is titled \"The Hit\" by David Baldacci, and it is likely a thrilling novel with an intense plot."
+  },
+  {
+    "image_id": "004052291",
+    "prompt": "Provide a brief description of the given image.",
+    "ground_truth": "sam and jillian fuller",
+    "mlp_generated": "The image features a man and a woman standing next to each other, both smiling and posing for a picture. The man is wearing a brown jacket, while the woman is wearing a blue dress. They appear to be enjoying their time together, possibly attending an event or a party.",
+    "baseline_generated": "The image features a man and a woman standing next to each other, both smiling and posing for a picture. The man is wearing a brown jacket, while the woman is dressed in a blue top. They appear to be enjoying their time together, possibly attending an event or a party.\n\nIn the background, there are two more people visible, but they are not the main focus of the scene. The man and woman are the main subjects of the image, and their smiles and poses suggest a happy and friendly atmosphere."
+  },
+  {
+    "image_id": "002697382",
+    "prompt": "What is this?",
+    "ground_truth": "a gold sconce mounted on the wall next to a mirror",
+    "mlp_generated": "The image features a bathroom with a mirror on the wall. Above the mirror, there is a light fixture that resembles a light bulb. The light bulb is hanging from the wall, and it appears to be a decorative element in the bathroom. The mirror reflects the light bulb, creating an interesting visual effect.",
+    "baseline_generated": "The image features a bathroom scene with a mirror on the wall and a light fixture hanging above it. The light fixture is shaped like a light bulb and is mounted on the wall. There are also towels hanging on a rack near the mirror, adding to the bathroom's functionality and decoration."
+  },
+  {
+    "image_id": "002349121",
+    "prompt": "Give a short and clear explanation of the subsequent image.",
+    "ground_truth": "the clone clone helmet, crocheted, ear flap hat, made to order",
+    "mlp_generated": "The image features a knitted hat with blue and white colors, placed on a mannequin head. The hat is designed with a unique pattern, making it stand out. The mannequin head is positioned in the center of the image, with the hat covering it. The hat is displayed on a yellow background, which adds a pop of color to the scene.",
+    "baseline_generated": "The image features a blue and white knitted hat sitting on a mannequin head. The hat is designed with a blue and white color scheme, and it appears to be a winter hat. The mannequin head is positioned in the center of the image, with the hat placed on top of it, showcasing the hat's design and fit."
+  },
+  {
+    "image_id": "003694365",
+    "prompt": "Present a compact description of the photo's key features.",
+    "ground_truth": "the cover of a radio talk podcast with a dark background and the text, turn to god",
+    "mlp_generated": "The image features a woman with red hair and glasses, smiling and looking at the camera. She is wearing a blue shirt and appears to be the main focus of the picture. The woman is surrounded by a black background, which highlights her presence in the scene.",
+    "baseline_generated": "The image features a woman with red hair, wearing glasses and a blue shirt. She is smiling and appears to be the main focus of the picture. The woman is positioned in the center of the image, and her face is clearly visible. The background is black, which contrasts with the woman's appearance and draws attention to her."
+  },
+  {
+    "image_id": "001308853",
+    "prompt": "Summarize the visual content of the image.",
+    "ground_truth": "beige and red lehenga set with dupatta",
+    "mlp_generated": "The image features a woman wearing a long, elegant dress with a red and gold color scheme. She is standing in front of a white background, showcasing the dress's beauty. The dress appears to be a traditional Indian outfit, with a long red skirt and a gold border. The woman is also wearing a red shawl, which adds to the overall aesthetic of the outfit.",
+    "baseline_generated": "The image features a woman wearing a beautiful red and gold dress, which appears to be a traditional Indian outfit. She is standing in front of a white background, showcasing the elegant design of her attire. The dress is adorned with a long red train, adding a touch of sophistication to the overall appearance. The woman's pose and the presentation of the dress emphasize its elegance and cultural significance."
+  },
+  {
+    "image_id": "000332745",
+    "prompt": "Describe the image concisely.",
+    "ground_truth": "man smiling with his hand on his head royalty free",
+    "mlp_generated": "The image features a young man wearing a blue shirt, smiling and holding up a finger to shade his eyes from the sun. He appears to be enjoying the moment and is the main focus of the scene. The background is white, which provides a clean and simple backdrop for the man.",
+    "baseline_generated": "The image features a smiling man wearing a blue shirt, standing in front of a white background. He is holding his hand up to his face, using it as a visor to shield his eyes from the sun. The man appears to be enjoying the moment and is the main focus of the scene."
+  },
+  {
+    "image_id": "000368492",
+    "prompt": "Write a terse but informative summary of the picture.",
+    "ground_truth": "a necklace that says ` ` have you ever seen a dream catcher?'' with a pearl bea and",
+    "mlp_generated": "The image features a close-up of a dream catcher hanging from a chain. The dream catcher is made of metal and has a white pearl in the center. The chain is silver, and the dream catcher is suspended in front of a white background. The overall scene is minimalistic and showcases the intricate details of the dream catcher.",
+    "baseline_generated": "The image features a close-up of a dream catcher hanging from a chain. The dream catcher is made of metal and has a white pearl in the center. The chain is silver, and the dream catcher is suspended in the air. The scene is set against a white background, which highlights the intricate details of the dream catcher."
+  },
+  {
+    "image_id": "004512531",
+    "prompt": "What is this?",
+    "ground_truth": "a to z book",
+    "mlp_generated": "The image is a collage of various artworks featuring different artists. The collage consists of a grid of 16 images, each showcasing a unique artist. The artists are represented by their names, which are displayed in the top row of the grid. The artworks are diverse, with some featuring people, while others showcase abstract designs or other elements. The collage is a visually engaging display of the creativity and talent of these artists.",
+    "baseline_generated": "The image features a book cover with a collage of various illustrations of people, showcasing a diverse range of characters. The book is titled \"Great Modern Artists A to Z,\" and it appears to be a reference book or an art history book. The illustrations are arranged in a grid-like pattern, with each person's image occupying a square. The book cover is visually engaging and highlights the variety of artistic styles and subjects covered in the book."
+  },
+  {
+    "image_id": "004562048",
+    "prompt": "Present a compact description of the photo's key features.",
+    "ground_truth": "the word georgian in many different languages",
+    "mlp_generated": "The image is a close-up of a red circle filled with various words related to the theme of style. The words are arranged in a visually appealing manner, with some words overlapping each other. The circle is filled with different styles of writing, creating a unique and interesting composition. The words are likely related to fashion, design, or other aspects of style, as they are all grouped together in this creative display.",
+    "baseline_generated": "The image features a large red circle filled with various words, primarily focused on the theme of style. The words are arranged in a visually appealing manner, with some words overlapping and others positioned closer to the center of the circle. The words are written in different colors, adding to the overall aesthetic of the image. The circle is the main subject of the photo, and it captures the viewer's attention with its vibrant colors and intricate arrangement of text."
+  },
+  {
+    "image_id": "000136400",
+    "prompt": "Render a clear and concise summary of the photo.",
+    "ground_truth": "manta ray, swimming in the ocean with diver behind",
+    "mlp_generated": "The image features a person wearing a wetsuit and scuba gear, swimming underwater near a large sea creature. The person appears to be a scuba diver, possibly observing the sea creature, which could be a manta ray or a stingray. The diver is positioned close to the sea creature, which is swimming above them, creating an interesting and captivating scene.",
+    "baseline_generated": "The image features a person wearing a wetsuit and scuba gear, swimming underwater with two large sea creatures. The person appears to be a diver, possibly observing or interacting with the sea creatures. The scene takes place in a blue ocean, with the diver and the sea creatures being the main focus of the image."
+  },
+  {
+    "image_id": "001807798",
+    "prompt": "Give a short and clear explanation of the subsequent image.",
+    "ground_truth": "a landscape shot of a vineyard in northern italy",
+    "mlp_generated": "The image depicts a lush green field with a path leading through it. The field is filled with rows of grapevines, creating a picturesque scene. The vines are growing in various directions, adding depth and texture to the landscape. The pathway is surrounded by the vines, providing a sense of tranquility and connection with nature. The overall atmosphere of the scene is serene and inviting, making it an ideal location for a leisurely walk or a peaceful retreat.",
+    "baseline_generated": "The image features a lush green field with a dirt path running through it. The path is surrounded by rows of green vines, creating a picturesque scene. The field is vast, stretching from the foreground to the horizon, and the vines are neatly arranged, giving the impression of a well-maintained landscape. The overall atmosphere of the scene is serene and inviting, with the vines and path providing a sense of tranquility."
+  },
+  {
+    "image_id": "001448386",
+    "prompt": "What is in the photo?",
+    "ground_truth": "intrecciato leather tote bag od botton",
+    "mlp_generated": "The photo features a large red purse, which is a handbag.",
+    "baseline_generated": "The photo features a purple or maroon-colored handbag, which is a woven or textured leather bag."
+  },
+  {
+    "image_id": "001687968",
+    "prompt": "Summarize the visual content of the image.",
+    "ground_truth": "a close up of an orange quilt with white polka dot fabric and a black border in the center",
+    "mlp_generated": "The image features a close-up view of a quilt with a decorative flange. The quilt is made of various materials, including a combination of orange and white colors. The flange is a decorative element that adds a unique touch to the quilt. The quilt is displayed on a table, showcasing its intricate design and craftsmanship.",
+    "baseline_generated": "The image features a close-up view of a decorative flange on a quilt. The flange is made of fabric and is placed on top of the quilt, adding a decorative touch to the overall design. The quilt itself is a combination of various colors, creating a visually appealing pattern. The close-up view of the flange highlights its intricate details and craftsmanship, showcasing the skill and effort put into creating this beautiful piece of fabric art."
+  },
+  {
+    "image_id": "000708789",
+    "prompt": "Summarize the visual content of the image.",
+    "ground_truth": "niger river in west africa",
+    "mlp_generated": "The image is a map of West Africa, focusing on the Niger River and its surrounding areas. The Niger River is a prominent feature, running through the center of the map from the top left to the bottom right. The map also includes various cities and towns, such as Niamey, Bamako, and Lagos, which are located along the river's banks.\n\nIn addition to the Niger River, there are several other rivers visible in the map, including the Benue River and the Gurma River. The map also features a few lakes, such as Lake Chad and Lake Nokoue. The overall layout of the map provides a clear representation of the geographical features and urban centers in West Africa.",
+    "baseline_generated": "The image features a map of West Africa, focusing on the Niger River and its surrounding countries. The map highlights the Niger River's path through various countries, including Nigeria, Guinea, and Mali. The river is depicted as a prominent feature, running from the top left to the bottom right of the map.\n\nIn addition to the Niger River, the map also shows other rivers and water bodies, such as the Benue River and the Gulf of Guinea. The countries are labeled with their respective names, providing a clear representation of the region's geography and waterways."
+  },
+  {
+    "image_id": "002561472",
+    "prompt": "Describe the image concisely.",
+    "ground_truth": "mid century walnut tulip dining table with oval base",
+    "mlp_generated": "The image features a large wooden table with a white base, giving it a modern and stylish appearance. The table is placed in the center of the room, surrounded by a white background that highlights its design. The combination of the wooden top and the white base creates a visually appealing contrast, making the table stand out as a focal point in the space.",
+    "baseline_generated": "The image features a large, round wooden table with a white base. The table is placed on a white background, making it the focal point of the scene. The wooden top of the table is smooth and polished, while the white base adds a modern touch to the overall design. The table appears to be a dining table, suitable for gatherings and meals."
+  },
+  {
+    "image_id": "005467173",
+    "prompt": "Share a concise interpretation of the image provided.",
+    "ground_truth": "morning coffee and cup of coffee icon design vector",
+    "mlp_generated": "The image features a blue and white coffee mug with the words \"Morning Coffee\" written on it. The mug is placed on a blue background, and the words \"All You Need Is\" are displayed above it. The combination of the coffee mug and the text suggests a morning coffee theme, possibly promoting the idea that a cup of coffee is all one needs to start the day.",
+    "baseline_generated": "The image features a blue and white coffee cup with steam coming out of it, placed on a blue background. The cup is accompanied by a banner that reads \"Morning Coffee,\" indicating that it is a morning coffee advertisement. The cup is positioned in the center of the image, and the banner is displayed above it."
+  },
+  {
+    "image_id": "003128956",
+    "prompt": "Describe the image concisely.",
+    "ground_truth": "a saudi flag flies above the saudi national flag in jedlah, yemen",
+    "mlp_generated": "The image features a green flag with white writing on it, flying in the sky. The flag is waving in the wind, and it appears to be a sunny day. There are two people in the scene, one standing to the left of the flag and the other standing to the right. The person on the right is closer to the flag, while the person on the left is further away. The flag is the main focus of the image, and it stands out against the sky.",
+    "baseline_generated": "The image features two men standing in front of a flag, which is flying in the wind. The flag is green and white, and it appears to be a Saudi Arabian flag. The men are positioned on either side of the flag, with one man standing closer to the left side and the other man standing closer to the right side. They seem to be enjoying the sight of the flag waving in the breeze."
+  },
+  {
+    "image_id": "000015476",
+    "prompt": "Share a concise interpretation of the image provided.",
+    "ground_truth": "a daughter will always tell you i love you daddy poster",
+    "mlp_generated": "The image features a heartfelt message written on a wooden board, expressing love and support for a daughter. The message is written in a poetic style, with the words \"I will always be here for you\" emphasizing the bond between the speaker and the daughter. The board is adorned with a picture of a man and a little girl, further emphasizing the connection between them. The overall scene conveys a sense of love, care, and support for the daughter.",
+    "baseline_generated": "The image features a heartfelt message written on a wooden board, addressed to a daughter. The message is a combination of words and drawings, expressing love and support for the daughter. The board is placed on a wall, making it a prominent and meaningful display."
+  },
+  {
+    "image_id": "002253211",
+    "prompt": "Give a short and clear explanation of the subsequent image.",
+    "ground_truth": "the yellow gold case and black leather band of the vacher",
+    "mlp_generated": "The image features a close-up of a watch face, which is a part of a larger watch. The watch face is white and has a black leather band. The watch is displaying the time, which is 10:20. The watch face also features a moon phase indicator, showing the current phase of the moon. The watch is positioned on a white background, making it the main focus of the image.",
+    "baseline_generated": "The image features a close-up of a watch face, showcasing the time and a moon phase indicator. The watch is placed on a white background, making it the main focus of the scene. The watch face is surrounded by a black leather strap, adding a touch of elegance to the overall appearance. The watch's design and the moon phase indicator make it a unique and stylish timepiece."
+  },
+  {
+    "image_id": "003576061",
+    "prompt": "Give a brief description of the image.",
+    "ground_truth": "galf buckets wine holder",
+    "mlp_generated": "The image features a metal basket with a handle, containing four wine bottles. The bottles are arranged in a way that they are visible from different angles, showcasing their variety. The basket is placed on a table, and the wine bottles are securely held in place by the basket's design. The arrangement creates an attractive display of the wine bottles, making it an appealing centerpiece for a gathering or a decorative element in a home.",
+    "baseline_generated": "The image features a basket filled with four wine bottles, each with different shapes and sizes. The basket is placed on a table, and the bottles are arranged in a way that they are easily visible and accessible. The bottles are positioned in a way that they are not overcrowding the basket, allowing for a neat and organized presentation."
+  },
+  {
+    "image_id": "002716765",
+    "prompt": "Summarize the visual content of the image.",
+    "ground_truth": "modern grey living room coffee table",
+    "mlp_generated": "The image features a spacious living room with a large window that allows natural light to fill the space. The room is furnished with a modern coffee table, which is placed on a rug in the center of the room. The coffee table is accompanied by two side tables, one on each side, creating a symmetrical arrangement. \n\nIn addition to the main furniture, there are several decorative elements in the room. A potted plant is placed near the left side table, while another potted plant is located closer to the right side table. A vase can be seen on the right side table, and a book is placed on the coffee table. The room also has a cozy atmosphere with a couch situated in the background, and a chair positioned nearby.",
+    "baseline_generated": "The image features a spacious living room with a large window that allows natural light to fill the room. The room is furnished with a modern coffee table, which is placed on a rug. The coffee table is accompanied by two side tables, one on each side, creating a symmetrical arrangement. \n\nIn addition to the main furniture, there are several decorative elements in the room. A potted plant is placed near the left side table, while a vase is situated on the right side table. A book can be seen on the coffee table, and a remote control is placed nearby. The room also contains a couch, which is positioned in the background, and a chair is located close to the right side table."
+  },
+  {
+    "image_id": "000802217",
+    "prompt": "Write a terse but informative summary of the picture.",
+    "ground_truth": "a bag full of money with a labeled retirement plan",
+    "mlp_generated": "The image features a white bag filled with money, which is placed on top of a pile of money. The bag is labeled \"Retirement Plan,\" indicating that the money is meant for retirement savings. The pile of money consists of various denominations, including a few twenty-dollar bills, and is spread out on a white surface. The scene conveys a sense of financial planning and preparation for the future.",
+    "baseline_generated": "The image features a white bag filled with money, which is placed on top of a pile of money. The bag is labeled \"Retirement Plan,\" indicating that the money is meant for retirement savings. The pile of money consists of various denominations, including a twenty-dollar bill, a ten-dollar bill, and several one-dollar bills. The scene conveys a sense of financial planning and preparation for the future."
+  },
+  {
+    "image_id": "000375422",
+    "prompt": "What is in the photo?",
+    "ground_truth": "the dinner room at cafe latte",
+    "mlp_generated": "The photo shows a group of people sitting at tables in a restaurant, enjoying their meals and drinks.",
+    "baseline_generated": "The photo shows a group of people sitting at tables in a restaurant, enjoying their meals and drinks."
+  },
+  {
+    "image_id": "000288157",
+    "prompt": "What is this?",
+    "ground_truth": "pop rock artist performing on the steps with his dance partner",
+    "mlp_generated": "The image features a group of people, including both men and women, standing on a red staircase in a city. They are dressed in colorful outfits, possibly as part of a performance or a special event. The group appears to be posing for a picture, with some of them holding hands, creating a sense of unity and camaraderie.\n\nThe cityscape in the background adds to the urban atmosphere of the scene. The people are spread out across the staircase, with some standing closer to the front and others further back, creating a dynamic and lively composition.",
+    "baseline_generated": "The image features a group of five women walking down a red staircase in a city. They are dressed in colorful outfits, and some of them are wearing hats. The women are walking in a line, with one woman slightly ahead of the others.\n\nThe scene takes place in front of a large building, possibly a theater, as there is a TV screen visible in the background. The women appear to be enjoying their time together, possibly attending an event or simply exploring the city."
+  },
+  {
+    "image_id": "000142902",
+    "prompt": "Render a clear and concise summary of the photo.",
+    "ground_truth": "a poster for the casino gambling game",
+    "mlp_generated": "The image features a large slot machine with a golden handle, surrounded by a variety of numbers. The slot machine is the main focus of the scene, and it appears to be in a casino setting. The numbers surrounding the slot machine are likely part of the game's payout table, indicating the potential winnings for different combinations of symbols. The scene is written in a foreign language, possibly Hindi, which adds to the overall atmosphere of the casino.",
+    "baseline_generated": "The image features a casino scene with a roulette wheel prominently displayed. The roulette wheel is surrounded by several numbers, indicating the various betting options available. The scene is written in a foreign language, possibly Hindi, which adds a unique cultural touch to the image. The casino setting and the presence of the roulette wheel suggest that this is a place where people can enjoy gambling and have fun."
+  },
+  {
+    "image_id": "001450149",
+    "prompt": "Share a concise interpretation of the image provided.",
+    "ground_truth": "the sacramento knight antigua women's full - zip jacket by antigua",
+    "mlp_generated": "The image features a beautiful blonde woman wearing a black jacket, posing confidently for the camera. She is standing with her hands on her hips, showcasing her stylish outfit. The woman appears to be the main focus of the scene, and the image captures her in a moment of self-assurance.",
+    "baseline_generated": "The image features a beautiful blonde woman wearing a black jacket, posing confidently for the camera. She is standing with her hands on her hips, showcasing her stylish outfit. The woman appears to be the main focus of the scene, and her smile adds to the overall pleasant atmosphere."
+  },
+  {
+    "image_id": "001927274",
+    "prompt": "Give a brief description of the image.",
+    "ground_truth": "the mindy show actress who stars in the hit series is wearing a black gown",
+    "mlp_generated": "The image features a woman standing on a red carpet, wearing a black dress. She is smiling and posing for the camera, likely at an event. The woman is holding a handbag in her hand, adding a touch of elegance to her overall appearance. The scene captures the essence of a special occasion or celebration, with the woman dressed in a stylish outfit and enjoying the moment.",
+    "baseline_generated": "The image features a woman wearing a black dress standing on a red carpet. She is smiling and appears to be posing for a picture. The woman is the main focus of the scene, and her outfit is elegant and stylish. The red carpet adds a touch of glamour to the overall atmosphere."
+  },
+  {
+    "image_id": "001410180",
+    "prompt": "Write a terse but informative summary of the picture.",
+    "ground_truth": "21 free motion graphics",
+    "mlp_generated": "The image features a collage of various text and colorful graphics, with the main focus being on the title \"21 Free Motion Graphics.\" The collage includes different fonts and colors, creating an eye-catching and visually appealing presentation. The purpose of the image is to showcase the available free motion graphics and encourage viewers to explore and utilize them in their projects.",
+    "baseline_generated": "The image features a collage of various colorful graphics, including text and images, with the title \"21 Free Motion Graphics.\" The graphics are arranged in a visually appealing manner, showcasing the different styles and designs available for free use. The collage is likely intended to promote the use of these motion graphics for various purposes, such as video editing, advertising, or other creative projects."
+  },
+  {
+    "image_id": "005138573",
+    "prompt": "Provide a brief description of the given image.",
+    "ground_truth": "nba 2k17 character portraits including the golden state warriors",
+    "mlp_generated": "The image features a man wearing a white headband and a white jersey. He appears to be a basketball player, as he is standing on a basketball court. The man is looking at the camera, possibly posing for a picture. The scene is captured in a close-up view, focusing on the man's face and headband.",
+    "baseline_generated": "The image features a man wearing a white headband and a white jersey. He appears to be a basketball player, as he is standing on a basketball court. The man is looking at the camera, and his image is displayed on a computer screen. The screen is showing a close-up of the man's face, capturing his focused expression."
+  },
+  {
+    "image_id": "002811525",
+    "prompt": "Give a short and clear explanation of the subsequent image.",
+    "ground_truth": "will smith and tom cruise arrive for the los premiere of the descendants at grau theatre on oct 25,",
+    "mlp_generated": "The image features two men standing next to each other, both wearing suits and ties. They appear to be posing for a picture, with one of them smiling. The men are standing in front of a movie poster, which suggests that they might be attending a movie event or premiere. The poster is located on the left side of the image, and the men are positioned towards the right side.",
+    "baseline_generated": "The image features two men standing next to each other, both wearing suits and ties. They appear to be posing for a picture, with one of them smiling and the other looking on. The men are standing in front of a movie poster, which suggests that they might be attending a movie event or premiere. The poster is visible in the background, and the men are the main focus of the scene."
+  },
+  {
+    "image_id": "001123861",
+    "prompt": "Present a compact description of the photo's key features.",
+    "ground_truth": "the famous blimp home blanket by ignorance is a blimps",
+    "mlp_generated": "The image features a large airplane flying through the sky, with a cloud of smoke trailing behind it. The airplane is positioned towards the left side of the image, and the smoke appears to be spreading outwards from the plane. The scene is depicted in black and white, giving it a classic and timeless feel.",
+    "baseline_generated": "The image features a large airplane, possibly a zephyr or a blimp, flying through the sky. The airplane is positioned in the center of the scene, with a cloudy background. The airplane is surrounded by a few smaller airplanes, which are scattered around the main airplane. The scene appears to be a black and white photograph, giving it a vintage feel."
+  },
+  {
+    "image_id": "004037000",
+    "prompt": "Describe the image concisely.",
+    "ground_truth": "three light track lamp",
+    "mlp_generated": "The image features a black and white photo of a light fixture with three lights mounted on a metal bar. The lights are positioned at different angles, creating a unique and interesting design. The fixture is mounted on a wall, and the lights are turned on, illuminating the space. The overall appearance of the light fixture is sleek and modern, making it an attractive addition to any room.",
+    "baseline_generated": "The image features a close-up view of a light fixture with three lights mounted on it. The lights are positioned at different angles, creating a unique and interesting design. The fixture is mounted on a wall, and the lights are turned on, illuminating the space. The overall scene is dark, with the lights being the main source of light in the room."
+  },
+  {
+    "image_id": "002569408",
+    "prompt": "Give a short and clear explanation of the subsequent image.",
+    "ground_truth": "a photograph of a vintage grand prix poster by federico and pablo",
+    "mlp_generated": "The image features a brown background with a white outline of a race track, likely representing the Grand Prix de Monaco. The race track is positioned in the center of the image, with a curved shape that resembles a race track. The design is simple and minimalistic, focusing on the outline of the track.",
+    "baseline_generated": "The image features a poster advertising the Grand Prix de Monaco, an annual motor race held in Monaco. The poster showcases a race car on a track, with the words \"Grand Prix de Monaco\" written in bold letters. The poster also includes a map of the race track, indicating the circuit's layout. The event is likely to be an exciting and thrilling experience for both participants and spectators."
+  },
+  {
+    "image_id": "000084794",
+    "prompt": "Write a terse but informative summary of the picture.",
+    "ground_truth": "a large checkered blue background for a navy fabric",
+    "mlp_generated": "The image features a blue plaid fabric with a checkered pattern. The fabric is displayed in a close-up view, showcasing the intricate design and texture. The blue color of the fabric is prominent, making it an eye-catching and attractive material.",
+    "baseline_generated": "The image features a blue plaid fabric with a checkered pattern. The fabric is displayed in a close-up view, showcasing the intricate design and texture. The blue color of the fabric is prominent, making it an eye-catching and attractive material."
+  },
+  {
+    "image_id": "004683348",
+    "prompt": "Give a brief description of the image.",
+    "ground_truth": "an evening star studded bag",
+    "mlp_generated": "The image features a black purse with a silver chain and a silver lock. The purse is adorned with a pattern of silver studs, giving it a stylish and unique appearance. The purse is displayed in a white background, allowing the details of the studs and the chain to stand out.",
+    "baseline_generated": "The image features a black purse with a silver chain and a keyhole. The purse is adorned with white dots, giving it a unique and stylish appearance. The purse is placed on a white background, making it the main focus of the image."
+  },
+  {
+    "image_id": "001924381",
+    "prompt": "What is this?",
+    "ground_truth": "some of the classic car sales brochures",
+    "mlp_generated": "The image is a collage of various car-related items, including pictures of cars, advertisements, and a book. The collage consists of nine different sections, each featuring a different car or car-related item. The cars are displayed in different positions and orientations, showcasing their various styles and designs. The collage is a visually engaging representation of the automotive industry and its history.",
+    "baseline_generated": "The image is a collage of various car-related items, including vintage car advertisements, car manuals, and pictures of cars. There are nine different sections in the collage, each featuring a different car or car-related item. The car manuals are displayed in the middle section, while the vintage car advertisements are spread across the top and bottom sections. The pictures of cars are featured in the bottom right section. The collage showcases a diverse collection of car-related memorabilia, providing a glimpse into the history and evolution of automobiles."
+  },
+  {
+    "image_id": "005027983",
+    "prompt": "Present a compact description of the photo's key features.",
+    "ground_truth": "the seven by peter newman",
+    "mlp_generated": "The image features a woman dressed in a white coat, standing on a rocky surface with a child in her arms. The woman appears to be protecting the child from the elements or potential danger. The scene is set against a dark sky, which adds a dramatic and mysterious atmosphere to the image. The woman and child are the main subjects of the scene, with the woman's white coat and the child's presence drawing attention to their relationship and the situation they are in.",
+    "baseline_generated": "The image features a woman in a white dress standing on a rocky surface, possibly a beach or a cliff. She is holding a sword, and there is another person nearby, possibly a child. The woman appears to be the main focus of the scene, while the child is positioned slightly behind her. The overall atmosphere of the image suggests a sense of adventure or a fantasy setting."
+  },
+  {
+    "image_id": "001681468",
+    "prompt": "Summarize the visual content of the image.",
+    "ground_truth": "william w johnstone and his family in helltown massacre",
+    "mlp_generated": "The image features a book cover with three men dressed in cowboy outfits, each holding a gun. They are standing close to each other, creating a sense of unity and camaraderie. The men are positioned in a way that they appear to be looking at the camera, giving the impression of a portrait. The book cover is likely related to a story or a series involving these three men, possibly set in the Old West.",
+    "baseline_generated": "The image features a book cover with a group of three men dressed in cowboy outfits, standing together in a western setting. They are all wearing hats and appear to be posing for a picture. The book is titled \"The Family Jensen: Helltown Massacre\" and is written by William W. Johnstone. The cover showcases the main characters and the theme of the story, which is set in the old west."
+  },
+  {
+    "image_id": "000325241",
+    "prompt": "Share a concise interpretation of the image provided.",
+    "ground_truth": "a light pink glass letter g in a 3d illustration with a transparent background",
+    "mlp_generated": "The image features a large, purple capital letter \"G\" prominently displayed in the foreground. The letter is slightly blurred, giving it a slightly distorted appearance. The background is a white, empty space, which allows the letter to stand out as the main focus of the image.",
+    "baseline_generated": "The image features a large, pink letter \"G\" prominently displayed in the foreground. The letter is rendered in a 3D, plastic-like style, giving it a unique and eye-catching appearance. The background is a white, flat surface that contrasts with the vibrant pink color of the letter."
+  },
+  {
+    "image_id": "000142443",
+    "prompt": "Render a clear and concise summary of the photo.",
+    "ground_truth": "an elegant and important, yellow gold wristwatch with roman numerals, made by jaerf and issued",
+    "mlp_generated": "The image features a close-up view of a gold and brown watch with a brown leather strap. The watch face is white and has Roman numerals, giving it a classic and elegant appearance. The watch is placed on a table, likely for display or to be worn by someone.",
+    "baseline_generated": "The image features a close-up view of a gold and brown watch with a brown leather strap. The watch face is white and has black numbers, making it easy to read the time. The watch is placed on a table, and the focus is on the watch face and the strap. The overall scene is simple and elegant, showcasing the watch as the main subject."
+  },
+  {
+    "image_id": "003644440",
+    "prompt": "Write a terse but informative summary of the picture.",
+    "ground_truth": "george washington in 3d glasses posters",
+    "mlp_generated": "The image features a portrait of George Washington wearing red and blue 3D glasses. The glasses are placed on his face, giving the impression of a playful and humorous twist to the historical figure. The portrait is set against a white background, which further emphasizes the contrast between the subject and the background.",
+    "baseline_generated": "The image features a portrait of George Washington wearing red and blue 3D glasses. The glasses are placed on his face, giving the impression that he is wearing them. The portrait is set against a white background, which further emphasizes the vibrant colors of the glasses."
+  },
+  {
+    "image_id": "000151686",
+    "prompt": "What is in the photo?",
+    "ground_truth": "a wheelbarrow is a wheelbarrow, a wheel barrow, or a cart that is pulled by",
+    "mlp_generated": "The photo features a painting of a red wheelbarrow with a white chicken inside.",
+    "baseline_generated": "The photo features a red wheelbarrow with a pail, a shovel, and a pair of chickens."
+  },
+  {
+    "image_id": "000692892",
+    "prompt": "What is in the photo?",
+    "ground_truth": "latest nepali full movie part 14 and 11 download",
+    "mlp_generated": "The photo features a man and a woman posing together, with the man wearing sunglasses. They are standing in front of a motorcycle, and there are other people in the background.",
+    "baseline_generated": "The photo features a movie poster with a man and a woman on it, along with a motorcycle. The poster is in a foreign language, and the couple appears to be posing for a picture."
+  },
+  {
+    "image_id": "004783721",
+    "prompt": "Write a terse but informative summary of the picture.",
+    "ground_truth": "red honda jazz car for honda celebration 2020",
+    "mlp_generated": "The image features a red Honda Fit parked on a street. The car is the main focus of the scene, with its vibrant color and sleek design. The car is parked in front of a building, and there are no other vehicles or people visible in the image. The overall atmosphere is calm and peaceful, with the red Honda Fit being the center of attention.",
+    "baseline_generated": "The image features a large advertisement for a red car, likely a Honda, with a message wishing the viewer a new journey in their new Honda. The car is prominently displayed in the center of the advertisement, capturing attention. The advertisement is likely meant to entice potential buyers and showcase the car's features and design."
+  },
+  {
+    "image_id": "006146350",
+    "prompt": "What is this?",
+    "ground_truth": "a book titled tree ar i kongo, showing the main text and image",
+    "mlp_generated": "The image features a pink background with a black and white illustration of a Greek-style building, possibly a temple or a monument. The illustration is accompanied by text in a foreign language, which could be a description or a caption related to the building. The combination of the pink background and the black and white illustration creates a visually striking contrast, drawing attention to the building's architectural details.",
+    "baseline_generated": "The image features a book cover with a pink background and a black and white illustration of a building, possibly a temple or a Greek structure. The title of the book is \"Tre ar i Kongoo, Skildringar af P. P. Moller, G. Pages, E. Gleerup, with illustrations and maps.\" The book appears to be a historical work about the ancient world, as suggested by the title and the illustration."
+  },
+  {
+    "image_id": "003797545",
+    "prompt": "Summarize the visual content of the image.",
+    "ground_truth": "a man's hand drawing a yellow home sign with a house shaped property news",
+    "mlp_generated": "The image features a hand holding a house, with the house symbolizing property news. The hand is positioned in the foreground, while the house is displayed in the background. The scene is set against a black background, which adds emphasis to the house and the hand.",
+    "baseline_generated": "The image features a hand holding a house, which is a symbolic representation of property. The hand is positioned in front of a black background, and the house appears to be a part of the hand's palm. The scene is a creative and artistic way of showcasing the concept of property news."
+  },
+  {
+    "image_id": "003528614",
+    "prompt": "Give a short and clear explanation of the subsequent image.",
+    "ground_truth": "a lightning storm over a dark sky with the words preparing your roof for summer storms",
+    "mlp_generated": "The image features a dark sky with two bright lightning bolts striking the ground. The lightning bolts are positioned close to each other, creating an impressive and dramatic scene. The sky is filled with clouds, adding to the overall atmosphere of the image. The scene captures the intensity and power of a summer storm.",
+    "baseline_generated": "The image features a dark sky with a large bolt of lightning striking the ground. The lightning is captured in the middle of the scene, creating a dramatic and intense atmosphere. The sky is filled with clouds, and the overall scene suggests a stormy weather condition. The image is likely meant to convey the importance of preparing for summer storms and the potential dangers they can bring."
+  },
+  {
+    "image_id": "001493258",
+    "prompt": "Present a compact description of the photo's key features.",
+    "ground_truth": "the newshour breakfast show with kim jong hyun",
+    "mlp_generated": "The image features a news reporter standing in front of a large screen, which displays a picture of two men. The reporter is wearing a suit and tie, and he appears to be discussing the content of the image. The screen takes up a significant portion of the background, with the reporter positioned in the foreground. The scene suggests that the reporter is providing a commentary or analysis on the image displayed on the screen.",
+    "baseline_generated": "The image features a news reporter standing in front of a large screen, which displays a picture of two men. The reporter is wearing a suit and tie, and he appears to be smiling as he delivers the news. The screen behind him is likely showing a news segment or a relevant image related to the story. The reporter's presence and the large screen create a professional and informative atmosphere."
+  },
+  {
+    "image_id": "001762110",
+    "prompt": "What is this?",
+    "ground_truth": "an american apparel purple shirt with a young man standing in front of him wearing a blue shirt",
+    "mlp_generated": "The image features a young man wearing a purple shirt, standing in front of a white background. He is smiling and appears to be posing for the picture. The man has long hair, which is styled in a ponytail. The shirt he is wearing is a purple t-shirt, and he is wearing jeans as well. The overall appearance of the man suggests a casual and relaxed atmosphere.",
+    "baseline_generated": "The image features a young man wearing a purple shirt, standing in front of a white background. He is smiling and posing for the camera, showcasing his outfit and the color of his shirt. The man appears to be in a relaxed and comfortable position, with his arms at his sides. The overall scene is a casual and friendly portrait of the individual."
+  },
+  {
+    "image_id": "004539332",
+    "prompt": "Describe the image concisely.",
+    "ground_truth": "jeff williams live at london jazz festival road tales",
+    "mlp_generated": "The image features a group of four men standing together, all wearing suits and ties. They appear to be posing for a picture, possibly at a jazz festival. Each man is wearing a different tie, adding a touch of individuality to their outfits. The men are positioned close to each other, with one man slightly to the left, another in the center, and the remaining two on the right side of the group.",
+    "baseline_generated": "The image features a group of four men standing together, all wearing suits and ties. They appear to be posing for a picture, possibly at a jazz festival. Each man is wearing a different tie, adding a touch of individuality to their outfits. The men are positioned close to each other, with one man slightly to the left, another in the center, and the remaining two on the right side of the group."
+  },
+  {
+    "image_id": "003351937",
+    "prompt": "Summarize the visual content of the image.",
+    "ground_truth": "nuts and raisins in burlock bag",
+    "mlp_generated": "The image features a brown cloth bag filled with a variety of nuts and dried fruits. The bag is placed on a white surface, and the contents are visible, showcasing the different types of nuts and fruits inside. The arrangement of the nuts and fruits creates a visually appealing display, inviting the viewer to enjoy a healthy snack.",
+    "baseline_generated": "The image features a close-up view of a brown paper bag filled with various nuts and dried fruits. The bag is open, revealing the contents inside. The nuts and fruits are spread out, with some of them partially visible outside the bag. The arrangement of the nuts and fruits creates a visually appealing and colorful display."
+  },
+  {
+    "image_id": "000012631",
+    "prompt": "What is in the photo?",
+    "ground_truth": "a silver airstream parked in a sandy area",
+    "mlp_generated": "The photo features a silver trailer or camper with a surfboard leaning against it.",
+    "baseline_generated": "The photo features a silver trailer or camper with a surfboard attached to it."
+  },
+  {
+    "image_id": "000860888",
+    "prompt": "Write a terse but informative summary of the picture.",
+    "ground_truth": "the stairs leading to the top of ravelari and the amanta in ravela on the amanta",
+    "mlp_generated": "The image features a stone walkway overlooking a body of water, with a fence and a railing nearby. There are several statues placed along the walkway, adding an artistic touch to the scene. In the background, a boat can be seen floating on the water, creating a picturesque view. The combination of the statues, the fence, and the boat creates a serene and visually appealing atmosphere.",
+    "baseline_generated": "The image features a stone walkway overlooking a body of water, with a railing and a row of statues lining the path. The statues are positioned at various intervals along the walkway, creating an artistic and visually appealing scene. The walkway is situated on a hill, providing a picturesque view of the water below."
+  },
+  {
+    "image_id": "000025449",
+    "prompt": "Describe the image concisely.",
+    "ground_truth": "lady and the tramp character posters",
+    "mlp_generated": "The image features a scene from the movie \"Lady and the Tramp,\" with two dogs sitting at a dining table, sharing a plate of spaghetti. The table is set with a bottle, a fork, and a knife. The dogs are positioned on opposite sides of the table, with one dog on the left and the other on the right.\n\nIn the background, there are two people, one on the left side and the other on the right side of the image. A car can be seen in the background, further emphasizing the outdoor setting of the scene.",
+    "baseline_generated": "The image features a scene from the movie \"Lady and the Tramp,\" with two dogs sitting at a dining table. One dog is positioned on the left side of the table, while the other is on the right. The table is set with a bowl, a fork, and a knife. \n\nIn the background, there are two people standing, possibly observing the dogs or waiting for their turn to sit at the table. The scene is set in a cozy environment, with a potted plant placed near the table and a chair nearby."
+  },
+  {
+    "image_id": "001009551",
+    "prompt": "Present a compact description of the photo's key features.",
+    "ground_truth": "the north face short sleeve camp shirt",
+    "mlp_generated": "The image features a tan shirt with a collar, which appears to be a button-up shirt. The shirt is hanging on a hanger, showcasing its front and back sides. The shirt is well-fitted and has a nice appearance, making it an attractive choice for a casual or formal occasion.",
+    "baseline_generated": "The image features a tan shirt with a collar, which appears to be a button-up shirt. The shirt is hanging on a hanger, showcasing its front and back sides. The shirt is likely made of cotton, as it is described as a \"cotton shirt.\" The shirt is displayed in a white background, making it the main focus of the image."
+  },
+  {
+    "image_id": "004883297",
+    "prompt": "Describe the image concisely.",
+    "ground_truth": "super junior - super junior /'s comeback mv video",
+    "mlp_generated": "The image features a group of men dressed in black and white, performing a choreographed dance routine. They are standing in a line, with some of them wearing ties, and appear to be posing for a picture. The men are spread across the scene, with some closer to the foreground and others further back. The group is well-coordinated, showcasing their synchronized movements and teamwork.",
+    "baseline_generated": "The image features a group of men dressed in black and white, performing a synchronized dance routine. They are standing in a line, with some of them wearing hats. The group appears to be a part of a music video or a performance, as they are all moving in unison. The scene is set in a white room, which provides a clean and minimalist backdrop for the dancers."
+  },
+  {
+    "image_id": "005845477",
+    "prompt": "Summarize the visual content of the image.",
+    "ground_truth": "visual studio screenshot",
+    "mlp_generated": "The image displays a computer screen with a program open, showing a code editor with a blue background. The screen is filled with a large amount of text, likely representing a program or a script. The text is organized in various sections, with some parts appearing larger than others.\n\nIn addition to the code editor, there are several icons visible on the screen, including a few located near the top left corner and others scattered throughout the image. The icons seem to be related to the program or script being displayed, providing context and functionality to the code editor.",
+    "baseline_generated": "The image displays a computer screen with multiple windows open, showcasing various applications and documents. There are four windows visible, with one occupying the left side of the screen, another in the middle, and two more on the right side. The windows are filled with different types of content, including text, images, and icons.\n\nIn addition to the windows, there are two keyboards on the screen, one located in the middle and the other towards the right side. The presence of multiple windows and keyboards suggests that the user might be multitasking or working with multiple applications simultaneously."
+  },
+  {
+    "image_id": "001715727",
+    "prompt": "Give a short and clear explanation of the subsequent image.",
+    "ground_truth": "chinese classical dance beijing opera troupe costume headpieces headwear complete set",
+    "mlp_generated": "The image features a person wearing a traditional Chinese costume, which includes a headdress and a red and blue outfit. The person appears to be a woman, and she is wearing a face paint design that resembles a dragon. The costume is adorned with various beads and pearls, adding to its intricate and ornate appearance. The person is standing in front of a wall, possibly posing for a photo or participating in a cultural event.",
+    "baseline_generated": "The image features a person wearing a traditional Chinese costume, which includes a headdress and a red and blue outfit. The person is standing in front of a wall, possibly posing for a picture. The costume appears to be a part of a cultural performance or event, showcasing the rich heritage of Chinese traditions."
+  },
+  {
+    "image_id": "001493896",
+    "prompt": "Describe the image concisely.",
+    "ground_truth": "nfl's biggest draft game storylines",
+    "mlp_generated": "The image features two men standing in front of a blue backdrop, likely at a press conference or a sports event. One man is wearing a suit and tie, while the other is dressed in a sports uniform. They appear to be discussing or addressing the audience.\n\nIn the scene, there is a football helmet placed on the floor, possibly as a prop or a symbol of the event. Additionally, there are two bottles visible in the background, one on the left side and the other on the right side of the image.",
+    "baseline_generated": "The image features two men standing in front of a podium, both dressed in suits. One of the men is wearing a tie, and they appear to be giving a press conference or addressing an audience. A sports ball, likely a football, is placed on the podium, adding context to the event.\n\nIn the background, there is a bottle and a cup, possibly containing beverages for the speakers or the audience. The overall atmosphere suggests a formal and professional setting."
+  },
+  {
+    "image_id": "001632585",
+    "prompt": "Share a concise interpretation of the image provided.",
+    "ground_truth": "a hogwart letter that includes the hogwart crest",
+    "mlp_generated": "The image features a letter with a Hogwarts crest on the top left corner. The letter is addressed to someone, and it appears to be a formal letter, possibly related to the Hogwarts School of Witchcraft and Wizardry. The letter is written in cursive, giving it an old-fashioned and elegant appearance.",
+    "baseline_generated": "The image features a letter written on a piece of paper, which appears to be an official document. The letter is addressed to someone named \"Harry Potter\" and is signed by \"J.K. Rowling.\" The paper has a crest on it, adding to the formality of the letter. The overall appearance of the letter suggests that it might be a certificate or an award, congratulating Harry Potter on his achievements."
+  },
+  {
+    "image_id": "003629088",
+    "prompt": "Describe the image concisely.",
+    "ground_truth": "the cyclist's own bicycle jacket by castelli",
+    "mlp_generated": "The image features a black jacket with a red hood, which is hanging on a mannequin. The jacket has a zipper and is designed to be worn by women. The mannequin is positioned in the center of the image, showcasing the jacket's features and design.",
+    "baseline_generated": "The image features a black jacket with a red hood, which is hanging on a mannequin. The jacket has a zipper and is designed to be worn by women. The mannequin is positioned in the center of the image, showcasing the jacket's design and fit."
+  },
+  {
+    "image_id": "002255295",
+    "prompt": "Share a concise interpretation of the image provided.",
+    "ground_truth": "a women's summer sun hat with ear flaps",
+    "mlp_generated": "The image features a woman wearing a pink hat and sunglasses, standing outside in the sun. She is smiling and appears to be enjoying her time outdoors. The woman is wearing a white shirt, and her hair is styled in a ponytail. The scene captures a pleasant and sunny day, with the woman dressed appropriately for the weather.",
+    "baseline_generated": "The image features a woman wearing a pink hat and sunglasses, standing outside in the sun. She is smiling and appears to be enjoying her time outdoors. The woman is wearing a white shirt, and her hair is styled in a ponytail. The scene captures a pleasant and sunny day, with the woman dressed appropriately for the weather."
+  },
+  {
+    "image_id": "001106680",
+    "prompt": "Describe the image concisely.",
+    "ground_truth": "the blue chevron necklace with wooden beads",
+    "mlp_generated": "The image features a necklace with a blue and white striped rope and a blue pendant. The necklace is adorned with various beads, including a wooden bead, a blue bead, and a wooden ball. The beads are arranged in a visually appealing manner, creating a unique and eye-catching design. The necklace is hanging on a white background, which highlights the colors and patterns of the beads.",
+    "baseline_generated": "The image features a necklace with a blue and white bead hanging from it. The necklace is made up of various beads, including a wooden bead, a blue bead, and a white bead. The necklace is displayed on a white background, making the beads stand out prominently. The necklace is positioned in the center of the image, with the beads arranged in a visually appealing manner."
+  },
+  {
+    "image_id": "000312177",
+    "prompt": "Write a terse but informative summary of the picture.",
+    "ground_truth": "the mountain dew logo on the front of a grey hoodie",
+    "mlp_generated": "The image features a gray hoodie with a Gatorade logo on the front. The hoodie is designed to be worn by a woman, and it appears to be a comfortable and casual piece of clothing. The Gatorade logo is prominently displayed, making it a recognizable and stylish addition to the hoodie.",
+    "baseline_generated": "The image features a grey hoodie with a Gatorade logo on the front. The hoodie is displayed in a close-up view, showcasing the brand's logo prominently. The hoodie appears to be a comfortable and stylish piece of clothing, perfect for sports enthusiasts or casual wear."
+  },
+  {
+    "image_id": "000347878",
+    "prompt": "Summarize the visual content of the image.",
+    "ground_truth": "a diagram showing the union flag and cross of st georges",
+    "mlp_generated": "The image features a map of the United Kingdom, with the flags of Scotland, Ireland, and England displayed. The flags are positioned in the upper left, upper right, and lower left corners of the map, respectively. The map itself is located in the center of the image, with the flags surrounding it. The flags are of different sizes, with the largest flag being the one representing the United Kingdom, and the smaller flags representing Scotland and Ireland.",
+    "baseline_generated": "The image features a diagram illustrating the relationship between the United Kingdom and Ireland. The diagram shows the flags of the two countries, with the British flag on the left side and the Irish flag on the right side. The flags are connected by a line, symbolizing the connection between the two nations.\n\nIn addition to the flags, the diagram also includes the names of the countries, with \"England\" and \"Scotland\" written above the British flag, and \"Ireland\" and \"Northern Ireland\" written above the Irish flag. This further emphasizes the relationship between the two countries."
+  },
+  {
+    "image_id": "002704309",
+    "prompt": "Render a clear and concise summary of the photo.",
+    "ground_truth": "a big horn ram in grass and cloudy skies poster",
+    "mlp_generated": "The image features a large ram with curved horns standing in a grassy field. The ram is walking across the field, possibly running, and appears to be the main focus of the scene. The field is surrounded by mountains, creating a picturesque and natural setting for the ram.",
+    "baseline_generated": "The image features a ram with large horns running across a grassy hillside. The ram is in the middle of the scene, with its horns prominently visible. The hillside is covered in tall, dry grass, creating a natural and wild atmosphere. The ram appears to be in motion, possibly running away from something or exploring its surroundings."
+  },
+  {
+    "image_id": "002123455",
+    "prompt": "Present a compact description of the photo's key features.",
+    "ground_truth": "a silverton 38 pilothouse on the water",
+    "mlp_generated": "The image features a large white boat floating on a body of water, possibly a lake or a bay. The boat is equipped with a cabin and a bridge, making it suitable for various water activities. The boat is surrounded by a serene environment, with a few clouds in the sky and a dock visible in the background. The scene captures the essence of a leisurely day spent on the water.",
+    "baseline_generated": "The image features a large white boat sailing on a body of water, possibly a lake or a river. The boat is equipped with a cabin and a cockpit, and it appears to be a yacht or a speedboat. The boat is moving swiftly through the water, and the sky above is partly cloudy.\n\nThere are several people on the boat, enjoying their time on the water. Some of them are standing near the front of the boat, while others are scattered around the cabin and cockpit areas. The scene captures the essence of a leisurely day spent on the water with friends or family."
+  },
+  {
+    "image_id": "001670484",
+    "prompt": "Summarize the visual content of the image.",
+    "ground_truth": "the great british battle flag of the uk with two lions, the queen's lion, and the royal",
+    "mlp_generated": "The image features a white baby bib with a dragon and a lion on it. The dragon is positioned on the left side of the bib, while the lion is on the right side. The bib is adorned with a British flag, adding a touch of national pride to the design. The bib is tied around the neck of a baby, making it a unique and stylish accessory for the child.",
+    "baseline_generated": "The image features a white baby bib with a dragon and a lion on it. The dragon is positioned on the left side of the bib, while the lion is on the right side. The bib is adorned with a British flag, adding a touch of national pride to the design. The bib is likely meant to be worn by a baby or a young child, providing a fun and stylish accessory for them."
+  },
+  {
+    "image_id": "001905356",
+    "prompt": "Write a terse but informative summary of the picture.",
+    "ground_truth": "the eiffel tower iphone case for the iphone 5",
+    "mlp_generated": "The image features a beautiful view of the Eiffel Tower in Paris, France. The tower is prominently visible in the background, with the sky serving as a backdrop. The scene also includes a body of water, possibly a river, in front of the tower. The overall atmosphere of the image is serene and picturesque, capturing the essence of the iconic landmark.",
+    "baseline_generated": "The image features a beautiful view of the Eiffel Tower in Paris, France, as seen from the Seine River. The tower stands tall and proud, with the sky in the background. The scene is captured in black and white, giving it a classic and timeless feel. The image captures the essence of the iconic landmark and the city's rich history."
+  },
+  {
+    "image_id": "001599373",
+    "prompt": "What is this?",
+    "ground_truth": "a blue plastic cutting board with an attached knife",
+    "mlp_generated": "The image features a blue plastic board or tray placed on a white background. The blue board appears to be a flat, rectangular object with a smooth surface. It could be used for various purposes, such as a cutting board, a serving tray, or a decorative piece. The contrast between the blue board and the white background highlights the vibrant color of the board, making it stand out in the scene.",
+    "baseline_generated": "The image features a blue plastic object, which appears to be a rectangular piece of plastic or a blue tray. It is placed on a white background, making it stand out. The blue object could be used for various purposes, such as a tray for holding items, a decorative piece, or a functional object in a specific context."
+  },
+  {
+    "image_id": "000456382",
+    "prompt": "Give a short and clear explanation of the subsequent image.",
+    "ground_truth": "deer logo, a vector, suitable for use as a symbol of deer's symbol",
+    "mlp_generated": "The image features a black and white deer emblem, which is the logo for the company \"Graceful.\" The deer is prominently displayed in the center of the image, with its head facing upwards. The logo is simple and elegant, showcasing the deer as the main focal point.",
+    "baseline_generated": "The image features a deer emblem, which is the logo for the company \"Graceful.\" The deer is depicted in a black and white style, with a prominent antler on its head. The emblem is placed on a white background, making it stand out and easily recognizable."
+  },
+  {
+    "image_id": "004533847",
+    "prompt": "Render a clear and concise summary of the photo.",
+    "ground_truth": "personalised embroidered babygroom and christ gown",
+    "mlp_generated": "The image features a white baby onesie with the name \"Daniel\" written on it. The onesie is hanging on a wooden surface, possibly a table or a hanger. The name \"Daniel\" is written in a star pattern, adding a touch of charm to the outfit. The overall scene gives a sense of warmth and comfort, as the baby's name is displayed prominently on the onesie.",
+    "baseline_generated": "The image features a white baby onesie with the name \"Daniel\" written on it. The onesie is hanging on a wooden surface, possibly a table or a hanger. The name is written in a star pattern, adding a touch of personality to the outfit. The overall scene is simple and focuses on the baby's clothing."
+  },
+  {
+    "image_id": "004024072",
+    "prompt": "Share a concise interpretation of the image provided.",
+    "ground_truth": "whitney m love by betty j walker",
+    "mlp_generated": "The image features a blue background with the title \"Whitney M. Y Love\" written in white. The title is accompanied by a cover photo of a woman, possibly Whitney Houston, who is known for her music and acting career. The image is likely promoting a book or a music album related to Whitney Houston.",
+    "baseline_generated": "The image features a book cover with the title \"Whitney Y. Love\" written in white text on a blue background. The book cover is designed to be visually appealing and eye-catching, likely to attract potential readers."
+  },
+  {
+    "image_id": "004008872",
+    "prompt": "Summarize the visual content of the image.",
+    "ground_truth": "the film poster for captain phillips",
+    "mlp_generated": "The image features a large body of water with a boat sailing on it. The boat is positioned towards the left side of the scene, and it appears to be a sailboat. The water is calm, and the boat seems to be gliding smoothly across the surface. The scene is reminiscent of a movie poster, possibly promoting a film about sailing or adventure on the water.",
+    "baseline_generated": "The image features a book cover with a blue background and a boat sailing on the water. The boat is prominently displayed in the center of the cover, with a person visible on the boat. The book is titled \"Tom Hanks' Captain Phillips: A True Story.\" The cover design effectively captures the essence of the story and the adventure on the high seas."
+  },
+  {
+    "image_id": "000971632",
+    "prompt": "What is in the photo?",
+    "ground_truth": "the busch gardens in universal park in orlando, fl",
+    "mlp_generated": "The photo features a roller coaster ride at a theme park, with a bird mascot logo in the foreground.",
+    "baseline_generated": "The photo features a roller coaster at Busch Gardens Tampa Bay, with a bird logo in the foreground."
+  },
+  {
+    "image_id": "001895193",
+    "prompt": "Describe the image concisely.",
+    "ground_truth": "the wire mesh manufacturer in thailand, china, and australia",
+    "mlp_generated": "The image features a large, woven mesh made of metal, possibly a metal mesh bag or a metal mesh tube. The mesh is displayed prominently in the foreground, taking up most of the frame. The mesh appears to be a part of a larger structure, possibly a metal mesh fence or a metal mesh wall. The close-up view of the mesh highlights its intricate pattern and texture.",
+    "baseline_generated": "The image features a large, woven mesh made of metal, which appears to be a type of filter or screen. The mesh is displayed in a close-up view, showcasing its intricate design and structure. The mesh is likely used for various purposes, such as filtering or separating materials, and it is a prominent feature in the image."
+  },
+  {
+    "image_id": "001046118",
+    "prompt": "Give a short and clear explanation of the subsequent image.",
+    "ground_truth": "a diamond band that has many pave rows of diamonds in each band",
+    "mlp_generated": "The image features a close-up view of a silver ring with a large center stone, surrounded by numerous smaller diamonds. The ring is set in a silver band, showcasing the intricate details of the diamond arrangement. The ring appears to be a wedding ring, as it is designed with a combination of larger and smaller stones, creating an elegant and eye-catching appearance.",
+    "baseline_generated": "The image features a close-up view of a beautiful diamond ring. The ring is set with a large number of diamonds, creating a stunning and eye-catching display. The diamonds are arranged in a circular pattern, covering the entire surface of the ring. The ring is placed on a white background, which highlights the sparkling diamonds and emphasizes their brilliance."
+  },
+  {
+    "image_id": "001740662",
+    "prompt": "Describe the image concisely.",
+    "ground_truth": "homeless people vector",
+    "mlp_generated": "The image is a collection of various cartoon illustrations depicting people in different situations. There are several people in the scene, with some standing, some sitting, and others engaged in various activities. One person is pushing a shopping cart, while another is sitting on a chair. A few people are seen standing near a table, and one person is sitting on a bed.\n\nIn addition to the people, there are also a few objects in the scene, such as a suitcase, a handbag, a backpack, and a bottle. The illustrations are arranged in a way that showcases the diverse activities and interactions of the people in the image.",
+    "baseline_generated": "The image is a collection of various cartoon-like illustrations of people in different situations. There are at least nine people in the scene, each depicted in a unique pose or activity. Some of the people are carrying items such as suitcases, handbags, and backpacks.\n\nIn addition to the people, there are two couches in the scene, one located in the top left corner and the other in the top right corner. A chair can also be seen in the middle of the scene. The illustrations are arranged in a way that showcases the diverse activities and interactions of the people."
+  },
+  {
+    "image_id": "003355976",
+    "prompt": "Summarize the visual content of the image.",
+    "ground_truth": "animonda integra protect diabetes fish in jelly with salmon adult canned cat food 156g",
+    "mlp_generated": "The image features a close-up of a container of Anifondi Integra Protect, a dietary supplement for cats. The container is made of metal and has a blue and pink label. The label provides information about the product, including its ingredients and purpose. The container is placed on a white background, making the product stand out.",
+    "baseline_generated": "The image features a close-up of a container of Anifond Diabetes Protect, a dietary supplement for cats. The container is made of metal and has a purple label. The label provides information about the product, including its ingredients and benefits. The container is placed on a white background, making the product stand out."
+  },
+  {
+    "image_id": "001809635",
+    "prompt": "What is this?",
+    "ground_truth": "the f logo is shown, with a red background and a white square",
+    "mlp_generated": "The image features a red square with a white square inside it. The white square is slightly larger than the red square, and both squares are positioned in the center of the image. The red square has a slightly darker shade than the white square, creating a visually appealing contrast between the two colors.",
+    "baseline_generated": "The image features a red square with a white square inside of it. The white square is slightly larger than the red square, and it is positioned in the center of the red square. The red square is the main focus of the image, while the white square serves as a contrasting element within the scene."
+  },
+  {
+    "image_id": "001329745",
+    "prompt": "Give a brief description of the image.",
+    "ground_truth": "cloud computing for enterprise development with devices and devices",
+    "mlp_generated": "The image features a cloud computing concept with a cloud symbol in the center, surrounded by various devices. There are three laptops in the scene, with one on the left side, another on the right side, and the third one at the top. Additionally, there are two cell phones, one located at the bottom left corner and the other at the bottom right corner.\n\nA computer mouse can be seen on the right side of the image, and a TV is positioned at the top right corner. The cloud symbol is connected to these devices, illustrating the concept of cloud computing and its integration with different devices.",
+    "baseline_generated": "The image features a cloud computing concept with a cloud symbol in the center, surrounded by various devices. There are three laptops positioned around the cloud, with one on the left side, another on the right side, and the third one at the top. Additionally, there are two cell phones, one located at the bottom left corner and the other at the bottom right corner.\n\nA computer mouse can be seen on the right side of the image, and a TV is positioned at the top right corner. The scene is a representation of how cloud computing connects and interacts with different devices and applications."
+  },
+  {
+    "image_id": "001567963",
+    "prompt": "Present a compact description of the photo's key features.",
+    "ground_truth": "the word terror is written in flames stock photo \u00a9 alex25",
+    "mlp_generated": "The image features a close-up of the word \"TERROR\" written in white letters on a black background. The letters are surrounded by a fiery, orange glow, creating a striking visual effect. The overall composition of the image is minimalistic, with the focus on the word and its bold presentation.",
+    "baseline_generated": "The image features a close-up of the word \"TERROR\" written in white letters, with each letter surrounded by a fiery red background. The letters are arranged in a way that resembles a flame, creating a striking visual effect. The overall composition of the image is bold and eye-catching, emphasizing the word \"TERROR\" as the main focus."
+  },
+  {
+    "image_id": "003054646",
+    "prompt": "Present a compact description of the photo's key features.",
+    "ground_truth": "children play food pretend toys set includes play food and kitchen accessories",
+    "mlp_generated": "The image displays a large assortment of toy food items arranged on a table. The collection includes various types of food, such as a pizza, a hot dog, a sandwich, and a cake. There are also several bottles, possibly representing condiments or beverages, scattered throughout the scene. \n\nIn addition to the food items, there are a few utensils present, such as a fork and a knife. The arrangement of the toy food and utensils creates a visually appealing and realistic display, resembling a buffet or a meal setting.",
+    "baseline_generated": "The image features a large assortment of toy food items, including a pizza, a hot dog, a sandwich, and various fruits and vegetables. The toy food items are arranged on a table, creating an appealing display. \n\nIn addition to the food items, there are several bottles scattered throughout the scene, possibly representing condiments or beverages. The overall scene gives the impression of a playful and colorful arrangement of toy food and drinks."
+  },
+  {
+    "image_id": "002686363",
+    "prompt": "What is in the photo?",
+    "ground_truth": "car windshield suction mount, with suction cup",
+    "mlp_generated": "The photo features a black camera mount or camera stand, which is designed to hold a camera securely in place.",
+    "baseline_generated": "The photo features a black camera tripod with a camera mounted on it."
+  },
+  {
+    "image_id": "002404082",
+    "prompt": "Give a brief description of the image.",
+    "ground_truth": "backyard lawns landscaping services in west los ca",
+    "mlp_generated": "The image features a backyard with a beautifully maintained lawn. The lawn is surrounded by a wooden fence, and there is a bench located near the left side of the yard. A potted plant can be seen in the middle of the yard, adding a touch of greenery to the scene. \n\nIn addition to the potted plant, there are several vases scattered throughout the yard, with some placed closer to the fence and others near the bench. The combination of the green lawn, wooden fence, and decorative vases creates a serene and inviting atmosphere in the backyard.",
+    "baseline_generated": "The image features a backyard with a large, well-maintained lawn. The lawn is surrounded by a wooden fence, and there is a bench situated in the middle of the yard. A few potted plants are scattered throughout the scene, adding to the garden-like atmosphere. \n\nIn addition to the plants, there are two birds visible in the yard, one near the top left corner and the other near the top right corner. The backyard also has a dining table and a chair, providing a comfortable outdoor seating area."
+  },
+  {
+    "image_id": "000897810",
+    "prompt": "Describe the image concisely.",
+    "ground_truth": "dewall corded bradner with carry bag",
+    "mlp_generated": "The image features a black and yellow bag, likely a tool bag, placed on a white background. Inside the bag, there are two yellow and black power tools, possibly drills, securely stored. The tools are positioned in a way that they are easily accessible and visible through the bag's opening. The combination of the bag and tools suggests that they are ready for use in various tasks or projects.",
+    "baseline_generated": "The image features a black and yellow bag, likely a tool bag, placed on a white background. Inside the bag, there are two yellow and black power tools, possibly drills, securely stored. The bag is designed to hold and protect these tools, making it a convenient and practical storage solution for the user."
+  },
+  {
+    "image_id": "000653394",
+    "prompt": "Write a terse but informative summary of the picture.",
+    "ground_truth": "a woman wearing brown shoes and a tan skirt, while her leg is covered with cream socks",
+    "mlp_generated": "The image features a person wearing a pair of brown shoes and a yellow and white striped sock. They are sitting on the floor with their legs crossed, showcasing their footwear. The person appears to be relaxed and comfortable in their attire.",
+    "baseline_generated": "The image features a person wearing a pair of brown shoes and a yellow and white sock. They are sitting on the floor with their legs crossed, showcasing the shoes and sock. The person appears to be relaxed and comfortable in their attire."
+  },
+  {
+    "image_id": "000757221",
+    "prompt": "What is in the photo?",
+    "ground_truth": "a close up of a writing prompt with a quote that reads 33 good story prompts to inspire middle school",
+    "mlp_generated": "The photo features a purple pencil and a star, which are part of a book cover.",
+    "baseline_generated": "The photo features a person holding a pencil and a notebook, with the words \"33 Good Story Prompts to Inspire Middle School Students\" written above them."
+  },
+  {
+    "image_id": "002197370",
+    "prompt": "Present a compact description of the photo's key features.",
+    "ground_truth": "hand painted oil painting modern art on canvas huge painting abstract wall art for living room home decor gift",
+    "mlp_generated": "The image features a large, colorful painting of trees, showcasing a vibrant and lively scene. The painting is divided into three distinct sections, each with a different color palette. The first section is predominantly green, the second section is a mix of pink and purple, and the third section is a combination of orange and yellow. The painting is displayed on a wall, capturing the viewer's attention with its vivid colors and artistic composition.",
+    "baseline_generated": "The image features a large, colorful painting of trees on a wall. The painting is divided into three sections, each with a different color scheme. The first section is predominantly green, the second section is a mix of pink and yellow, and the third section is a combination of blue and orange. The painting is displayed in a room, and the vibrant colors create a visually appealing and lively atmosphere."
+  },
+  {
+    "image_id": "003602765",
+    "prompt": "What is this?",
+    "ground_truth": "a sunset image with the title sunlounger the downtempo edition",
+    "mlp_generated": "The image features a beautiful sunset with palm trees in the background. The sun is setting behind the palm trees, casting a warm glow on the scene. The image is a part of a book cover, which is titled \"Sunlounger: The Down Tempo Edition.\" The book cover showcases the relaxing and serene atmosphere of the sunset, inviting the viewer to enjoy a moment of tranquility and reflection.",
+    "baseline_generated": "The image features a beautiful sunset with palm trees in the background. The sun is setting behind the trees, casting a warm glow on the scene. The image is a part of a book cover, which is titled \"Sunlounger: The Down Tempo Edition.\" The book cover showcases a relaxing and serene atmosphere, perfect for a down tempo music collection."
+  },
+  {
+    "image_id": "000000713",
+    "prompt": "Summarize the visual content of the image.",
+    "ground_truth": "a star icon",
+    "mlp_generated": "The image features a large, yellow star with a face drawn on it. The face is composed of two eyes and a mouth, giving the star a playful and friendly appearance. The star is positioned in the center of the image, with a white background surrounding it.",
+    "baseline_generated": "The image features a large, bright yellow star with a face drawn on it. The face is positioned in the center of the star, giving it a unique and playful appearance. The star is the main focus of the image, and it stands out against the white background."
+  },
+  {
+    "image_id": "003870053",
+    "prompt": "Describe the image concisely.",
+    "ground_truth": "a tablet with a phone and an image of an app on it, with a real time tracker",
+    "mlp_generated": "The image features a tablet and a smartwatch placed next to each other, both displaying financial data. The tablet is positioned on the left side of the image, while the smartwatch is on the right side. The tablet and smartwatch are both displaying stock quotes and charts, providing real-time market information.\n\nIn addition to the tablet and smartwatch, there is a laptop situated in the middle of the image, which is also displaying financial data. The laptop is placed on a surface, with the tablet and smartwatch placed on either side of it. The scene suggests a comprehensive trading setup, with multiple devices providing real-time market data.",
+    "baseline_generated": "The image features a split-screen display showcasing a tablet and a smartwatch, both displaying real-time market data. The tablet is placed on the left side of the image, while the smartwatch is on the right side. The tablet and smartwatch are both displaying stock quotes and charts, providing users with up-to-date information on the financial markets.\n\nIn addition to the tablet and smartwatch, there is a cell phone placed in the middle of the image, which is also displaying real-time market data. The combination of these devices allows users to stay informed and connected to the financial markets at all times."
+  },
+  {
+    "image_id": "003762333",
+    "prompt": "Describe the image concisely.",
+    "ground_truth": "a few polka dots and neon dots on a wood background",
+    "mlp_generated": "The image features a wooden table with two colorful polka dot towels placed on top of it. The towels are folded neatly, showcasing their vibrant colors and patterns. One towel is pink with green dots, while the other is green with pink dots. The table occupies most of the scene, and the towels are the main focus of the image.",
+    "baseline_generated": "The image features a wooden table with two colorful polka dot towels placed on top of it. The towels are folded and stacked, with one towel being pink and the other being green. The polka dots on the towels are of various sizes, adding a playful and vibrant touch to the scene. The table occupies most of the image, with the towels being the main focus."
+  },
+  {
+    "image_id": "002160296",
+    "prompt": "Describe the image concisely.",
+    "ground_truth": "set of red salad plates",
+    "mlp_generated": "The image features a red plate sitting on top of a stack of red plates. The plate on the top is slightly larger than the others, creating a visually appealing arrangement. The stack of plates is placed on a white surface, which provides a clean and contrasting background for the vibrant red color of the plates.",
+    "baseline_generated": "The image features a red plate sitting on top of a stack of red plates. The plate on top is larger and covers the entire stack, while the other plates are smaller and arranged beneath it. The stack of plates is placed on a white surface, creating a visually striking contrast between the red plates and the background."
+  },
+  {
+    "image_id": "004328082",
+    "prompt": "What is in the photo?",
+    "ground_truth": "actors are talking to each other while at a table in the movie grease",
+    "mlp_generated": "The photo features a man and a woman sitting at a table, engaged in conversation. They are both dressed in formal attire, and the man is wearing a tie.",
+    "baseline_generated": "The photo features a man and a woman sitting at a table in a restaurant, having a conversation."
+  },
+  {
+    "image_id": "000543071",
+    "prompt": "Summarize the visual content of the image.",
+    "ground_truth": "a model in an artistic design dress",
+    "mlp_generated": "The image features a woman wearing a colorful dress, walking down a runway. She is the main focus of the scene, and her outfit is eye-catching. The woman is surrounded by a crowd of people, some of whom are also wearing dresses. The audience appears to be attentive and engaged in the fashion show. The overall atmosphere suggests a lively and stylish event.",
+    "baseline_generated": "The image features a woman wearing a colorful dress, walking down a runway. She is the main focus of the scene, and her outfit is eye-catching. The runway is surrounded by a crowd of people, some of whom are sitting on chairs, while others are standing. The audience appears to be attentive and engaged in the fashion show. The woman in the colorful dress is likely the center of attention as she confidently strides down the runway."
+  },
+  {
+    "image_id": "001220268",
+    "prompt": "Share a concise interpretation of the image provided.",
+    "ground_truth": "herspooe herspooen backpack little america 15 liter",
+    "mlp_generated": "The image features a large, tan-colored backpack with a brown strap. The backpack is placed against a white background, making it the main focus of the scene. The backpack appears to be well-made and suitable for carrying various items, such as books or personal belongings.",
+    "baseline_generated": "The image features a large, tan-colored backpack with a brown strap. The backpack is placed against a white background, making it the main focus of the scene. The backpack appears to be well-made and suitable for carrying items, possibly for travel or daily use."
+  },
+  {
+    "image_id": "002095810",
+    "prompt": "Give a short and clear explanation of the subsequent image.",
+    "ground_truth": "the pride lift chair recliner from the front with the power motor control",
+    "mlp_generated": "The image features a brown leather recliner chair with a remote control placed on its seat. The remote is positioned towards the center of the chair, making it easily accessible for the user. The chair is designed for comfort and relaxation, with its reclining feature allowing the user to sit back and enjoy their time.",
+    "baseline_generated": "The image features a brown leather recliner chair with a remote control placed on the seat. The remote control is positioned in the middle of the chair, making it easily accessible for the user. The chair is designed for comfort and relaxation, with its reclining feature allowing the user to sit back and enjoy their time."
+  },
+  {
+    "image_id": "002728388",
+    "prompt": "What is in the photo?",
+    "ground_truth": "the gym at camden apartments, with the exercise room in the background",
+    "mlp_generated": "The photo shows a large room filled with various exercise machines, including treadmills, a weight machine, and a stationary bike. The room appears to be a gym or a fitness center.",
+    "baseline_generated": "The photo shows a large gym with various exercise equipment, including weight machines and cardio equipment."
+  },
+  {
+    "image_id": "005007182",
+    "prompt": "Summarize the visual content of the image.",
+    "ground_truth": "purple keep calm it's your 50th birthday foil balloon",
+    "mlp_generated": "The image features a large, inflatable cat balloon, which is white and brown in color. The cat balloon is standing on its hind legs, giving it a playful and adorable appearance. The balloon is positioned in the center of the image, capturing attention and making it the main focus of the scene.",
+    "baseline_generated": "The image features a large, white, and brown cat balloon floating in the air. The cat balloon is designed to resemble a tiger cat, with its distinctive black and orange stripes. The balloon is positioned in the center of the image, capturing attention with its unique and eye-catching design."
+  },
+  {
+    "image_id": "001057040",
+    "prompt": "Summarize the visual content of the image.",
+    "ground_truth": "the chrysler pacifica hybrid van at flemmington chrysler jeep dodge ram in salem, massachusetts",
+    "mlp_generated": "The image features a red Jeep Dodge SUV parked in a parking lot. The SUV is prominently displayed in the foreground, occupying a significant portion of the scene. In the background, there is a building, possibly a dealership, with a few cars parked nearby. \n\nThere are two people in the scene, one standing closer to the left side of the image and the other person standing further to the right. The presence of these individuals suggests that they might be interested in the vehicles or are attending to their own vehicles.",
+    "baseline_generated": "The image features a red Chrysler Jeep Dodge Ram parked in a parking lot. The vehicle is prominently displayed in the foreground, occupying a significant portion of the scene. \n\nIn the background, there are several other cars parked in the lot, with one car on the left side and two cars on the right side. Additionally, there are two people visible in the scene, one standing near the center and the other closer to the right side of the image."
+  },
+  {
+    "image_id": "005872920",
+    "prompt": "Write a terse but informative summary of the picture.",
+    "ground_truth": "an union jack icon, in a circular badge style",
+    "mlp_generated": "The image features a large, round, blue and red British flag, which is the national flag of the United Kingdom. The flag is displayed prominently in the center of the image, with its distinctive colors and design making it easily recognizable.",
+    "baseline_generated": "The image features a large, round, and colorful British flag, which is predominantly red, white, and blue. The flag is displayed prominently in the center of the image, with its distinctive design and vibrant colors making it the focal point. The flag's circular shape and bold colors create a visually striking and patriotic scene."
+  },
+  {
+    "image_id": "001935236",
+    "prompt": "What is in the photo?",
+    "ground_truth": "the word klein, klein be, keinest in pink - manner manner t - shirts - mannen",
+    "mlp_generated": "The photo features a white shirt with pink text that reads \"Klein Kleinen Kleinst.\"",
+    "baseline_generated": "The photo features a white shirt with pink letters, which says \"Klein Kleinen Kleinst.\""
+  },
+  {
+    "image_id": "005980028",
+    "prompt": "Provide a brief description of the given image.",
+    "ground_truth": "an orange shirt with the words, i'm on the kisser and a man in black standing by",
+    "mlp_generated": "The image features a man wearing a red shirt with the phrase \"Ditch the Kitsch\" written on it. The shirt is prominently displayed in the foreground, while the man's body is visible in the background. The shirt's message suggests a preference for simplicity and avoiding overly trendy or ostentatious styles.",
+    "baseline_generated": "The image features a man wearing a red shirt with the phrase \"Ditch the Kitsch\" written on it. The shirt is designed to look like a T-shirt, and the man is standing in front of a sign that says \"Insert Rhyme Here.\" The man appears to be posing for a picture, and the scene is set against a red background."
+  },
+  {
+    "image_id": "000492897",
+    "prompt": "Share a concise interpretation of the image provided.",
+    "ground_truth": "a bedroom with green rugs, a large headboard, and a dark grey bed",
+    "mlp_generated": "The image features a cozy bedroom with a bed positioned under a large woven wall hanging. The bed is covered with a grey blanket, and there are two pillows placed on it. A small table is located next to the bed, with a candle on it, adding a touch of warmth and ambiance to the room. The room also has a window, allowing natural light to enter and illuminate the space.",
+    "baseline_generated": "The image features a bedroom with a bed positioned under a large wicker or straw decoration, which serves as a unique headboard. The bed is covered with a grey comforter, and there are two pillows placed on it. Above the bed, there is a light fixture hanging from the ceiling, providing illumination to the room. \n\nIn addition to the bed, there is a small table with a bowl on it, and a vase placed nearby. The room also has a window, allowing natural light to enter the space. The overall atmosphere of the room appears to be cozy and inviting."
+  },
+  {
+    "image_id": "001058827",
+    "prompt": "What is in the photo?",
+    "ground_truth": "a geometric pattern with gold shapes",
+    "mlp_generated": "The photo features a pattern of geometric shapes, specifically diamond shapes, arranged in a square grid.",
+    "baseline_generated": "The photo features a geometric pattern made up of triangles, which is displayed on a wall."
+  },
+  {
+    "image_id": "000617297",
+    "prompt": "Summarize the visual content of the image.",
+    "ground_truth": "the elder scrolls image",
+    "mlp_generated": "The image depicts a picturesque scene of a small village with a mix of old and new buildings. The village is situated in a valley, surrounded by a lush green field. The sky above the village is filled with clouds, creating a serene atmosphere.\n\nThere are several people scattered throughout the village, going about their daily activities. Some of them are closer to the buildings, while others are further away, enjoying the outdoors. The combination of the village, the field, and the cloudy sky creates a charming and peaceful setting.",
+    "baseline_generated": "The image depicts a beautiful, sunny day in a lush green field with a picturesque village in the background. The village consists of several small houses and a barn, all situated on a hill. The scene is further enhanced by the presence of a fence and a dirt road running through the field.\n\nIn the foreground, there are two birds flying, adding a touch of life to the serene landscape. The overall atmosphere of the image is peaceful and idyllic, showcasing the charm of the countryside."
+  },
+  {
+    "image_id": "000414703",
+    "prompt": "Share a concise interpretation of the image provided.",
+    "ground_truth": "the girl is hanging upside down in a rope swing",
+    "mlp_generated": "The image features a young girl flying through the air while holding onto a rope, possibly swinging on a swing or a zip line. She is wearing a jacket and boots, which provide her with warmth and protection during her adventure. The scene captures the excitement and joy of the girl as she soars through the air, enjoying the thrill of the activity.",
+    "baseline_generated": "The image features a young girl flying through the air while riding a swing. She is wearing a jacket and boots, and her arms are outstretched as she enjoys the thrill of the ride. The swing is positioned high above the ground, providing the girl with an exhilarating experience."
+  },
+  {
+    "image_id": "000361414",
+    "prompt": "Describe the image concisely.",
+    "ground_truth": "the procedure documents and documentation are also provided by this process for example, and should not be copied as documented",
+    "mlp_generated": "The image is a document that provides an overview of the purpose and structure of a software design document. It is divided into sections, each with a brief description of its contents. The sections include:\n\n1. Scope: Provides a description and scope of the software and its intended audience.\n2. System Overview: Gives a general description of the system's architecture and design.\n3. System Architecture: Describes the system's architecture and design in detail.\n4. System Design: Explains the design of the system, including its components and their interactions.\n5. System Implementation: Outlines the implementation details of the system, such as programming languages and tools used.\n6. System Testing: Describes the testing process and methodologies employed to ensure the system's functionality and reliability.\n7. System Maintenance: Discusses the maintenance plan for the system, including updates and bug fixes.\n8. Glossary: Provides a list of terms and acronyms used throughout the document for clarity and understanding.\n\nThe document is organized in a clear and concise manner, making it easy to understand the purpose and structure of the software design document.",
+    "baseline_generated": "The image is a document with a list of topics related to software design. The topics are organized in a table format, with each topic labeled and numbered. The list includes various aspects of software design, such as system overview, system architecture, and system design. The document provides a comprehensive guide to understanding and implementing software design principles."
+  },
+  {
+    "image_id": "002952342",
+    "prompt": "Share a concise interpretation of the image provided.",
+    "ground_truth": "a skateboarder silhouette stock vector clip, a illustration of a skateboarder silhouette by michael travers",
+    "mlp_generated": "The image features a silhouette of a person riding a skateboard, performing a trick in mid-air. The skateboarder appears to be a young man, and the scene is set against a bright orange background. The skateboarder's body is positioned in a way that showcases the impressive height and skill involved in the trick.",
+    "baseline_generated": "The image features a silhouette of a person riding a skateboard, with the skateboarder's legs spread out and arms outstretched. The skateboarder appears to be in the middle of performing a trick or maneuver. The scene is set against a bright orange background, which adds a vibrant and energetic atmosphere to the image."
+  },
+  {
+    "image_id": "000667459",
+    "prompt": "Present a compact description of the photo's key features.",
+    "ground_truth": "three gems in the sahara desert in the afternoon stock photo \u00a9 brezebox",
+    "mlp_generated": "The image features three zebras standing on a dirt hill, facing the camera. They are positioned in a row, with one zebra on the left side, another in the middle, and the third on the right side of the scene. The zebras are standing close to each other, creating a sense of unity and companionship. The background consists of a clear blue sky, which contrasts nicely with the earthy terrain on which the zebras are standing.",
+    "baseline_generated": "The image features a group of four horned animals, possibly antelopes or gazelles, standing together on a sandy hill. They are positioned in a line, with one animal slightly to the left of the center, another in the middle, and the remaining two on the right side of the scene. The animals appear to be looking in the same direction, possibly observing something in the distance. The sky serves as a backdrop for the scene, creating a serene and natural atmosphere."
+  },
+  {
+    "image_id": "003751923",
+    "prompt": "Present a compact description of the photo's key features.",
+    "ground_truth": "golden christmas decoration and decoration frame with candle",
+    "mlp_generated": "The image features a white frame with a gold border, adorned with a festive Christmas decoration. Inside the frame, there are three lit candles, creating a warm and inviting atmosphere. The candles are placed in a row, with one on the left side, one in the middle, and one on the right side of the frame. The combination of the candles and the Christmas decoration suggests that the frame is meant to be used as a holiday-themed photo holder or a decorative piece during the festive season.",
+    "baseline_generated": "The image features a beautifully decorated Christmas card with a gold frame. The card is adorned with a white background and a gold border, giving it a festive appearance. There are several ornaments and decorations on the card, including a candle, a snowflake, and a bow. The card is ready to be filled with a personal message, making it a perfect holiday greeting for friends and family."
+  },
+  {
+    "image_id": "006082592",
+    "prompt": "Share a concise interpretation of the image provided.",
+    "ground_truth": "the 10 inch white taper candles set of 100",
+    "mlp_generated": "The image features a set of 100 white candles, each with a green top, lined up in a row. The candles are of varying heights, creating a visually appealing display. In addition to the candles, there is a remote control placed near the bottom right corner of the image, possibly indicating that the scene takes place in a living room or a similar setting.",
+    "baseline_generated": "The image features a set of 100 white candles arranged in a row. The candles vary in size, with some being taller and others shorter. They are all lit, creating a visually appealing display. In addition to the candles, there is a remote control placed near the bottom right corner of the image."
+  },
+  {
+    "image_id": "006125304",
+    "prompt": "Describe the image concisely.",
+    "ground_truth": "the association member of hrsa",
+    "mlp_generated": "The image features a logo for the National Association of Home Builders (NAHB) in blue and white. The logo is prominently displayed in the center of the image, with the words \"Associate Member\" written below it. The logo and text are set against a white background, making the colors of the logo stand out.",
+    "baseline_generated": "The image features a logo for the International Health, Racquet and Sports Association (IHRS). The logo is displayed in blue and yellow colors, with the words \"IHRS\" written in white. The logo is surrounded by a white background, making it stand out prominently."
+  },
+  {
+    "image_id": "003554563",
+    "prompt": "Render a clear and concise summary of the photo.",
+    "ground_truth": "china poster with a girl looking at her boyfriend and the guy who is playing",
+    "mlp_generated": "The image features a group of people, including both men and women, posing together for a picture. They are all dressed in formal attire, with some of them wearing ties. The group appears to be a mix of Asian and Caucasian individuals, and they are standing close to each other, possibly for a special occasion or event.",
+    "baseline_generated": "The image features a group of young people, including both boys and girls, posing together for a picture. They are all smiling and appear to be enjoying their time together. The group is standing in front of a poster, which is likely related to their activity or event. The scene captures a moment of camaraderie and shared enjoyment among the group members."
+  },
+  {
+    "image_id": "000138312",
+    "prompt": "What is in the photo?",
+    "ground_truth": "a girl wearing a tank top that says'no bad vibes'with the words ` and the words",
+    "mlp_generated": "The photo features a woman wearing a blue shirt with the words \"No Bad Vibes\" on it.",
+    "baseline_generated": "The photo features a woman wearing a blue shirt with the words \"No Bad Vibes\" on it."
+  },
+  {
+    "image_id": "005640421",
+    "prompt": "Write a terse but informative summary of the picture.",
+    "ground_truth": "a young asian business man in a suit photo",
+    "mlp_generated": "The image features a man wearing a suit and tie, standing with his arms crossed. He appears to be in a professional setting, possibly a business environment. The man is wearing a blue suit and a black tie, which adds to his formal appearance. The overall scene conveys a sense of confidence and professionalism.",
+    "baseline_generated": "The image features a young man wearing a suit and tie, standing with his arms crossed. He is dressed in a dark suit and a black tie, giving off a professional and confident appearance. The man is posing for the camera, likely for a portrait or a business-related photo."
+  },
+  {
+    "image_id": "002598872",
+    "prompt": "What is this?",
+    "ground_truth": "army backpack with inscription of other people in the world",
+    "mlp_generated": "The image features a green canvas bag with a strap, which is likely a messenger bag or a small backpack. The bag has a white tag on it, and the words \"other people in the world do exist\" are written on it. The bag appears to be empty, and it is placed on a white surface, possibly a table or a counter.",
+    "baseline_generated": "The image features a green canvas bag with a strap, which is hanging on a white background. The bag has a message written on it, stating \"other people in the world do exist.\" This message suggests that the bag's owner wants to remind others that there are people beyond their immediate surroundings, and that they should be mindful of the diverse experiences and perspectives of others. The bag appears to be a handbag or a small backpack, suitable for carrying personal belongings."
+  },
+  {
+    "image_id": "004410264",
+    "prompt": "Present a compact description of the photo's key features.",
+    "ground_truth": "the australian native bee book keeping stingless bees for pets, pollinators and sugarbags honey",
+    "mlp_generated": "The image features a close-up view of a beehive, showcasing the intricate details of the honeycomb structure. The honeycomb is filled with numerous bees, some of which are visible in various positions throughout the image. The bees are of different sizes and are scattered across the honeycomb, creating a vibrant and lively scene. The honeycomb is the central focus of the image, highlighting the natural beauty and complexity of the beehive.",
+    "baseline_generated": "The image features a close-up view of a beehive, showcasing the intricate details of the honeycomb structure. The honeycomb is filled with numerous bees, some of which are visible in various positions within the hive. The bees are of different sizes, indicating a diverse population within the hive. The honeycomb is a fascinating sight, highlighting the bees' remarkable organization and craftsmanship."
+  },
+  {
+    "image_id": "003477453",
+    "prompt": "Give a brief description of the image.",
+    "ground_truth": "2 digit multiplication worksheet",
+    "mlp_generated": "The image features a young boy wearing a yellow shirt and blue shorts, smiling and posing for a picture. He is standing in front of a set of worksheets, which are titled \"2 Digit by 1 Digit Multiplication Worksheets.\" The worksheets are designed to help children learn and practice multiplication problems. The boy appears to be enjoying the learning process and is likely engaged in the educational activity.",
+    "baseline_generated": "The image features a young boy wearing a yellow shirt, standing in front of a set of worksheets. The worksheets are designed to help children learn and practice 2-digit by 1-digit multiplication. The boy appears to be engaged in the learning process, possibly working on the worksheets himself or with the assistance of a teacher or parent."
+  },
+  {
+    "image_id": "001883392",
+    "prompt": "Give a short and clear explanation of the subsequent image.",
+    "ground_truth": "adidas cloudfoam running shoe in rose",
+    "mlp_generated": "The image features a pink Adidas shoe with a white sole, placed on a white background. The shoe is a sneaker with a lace-up design, and it appears to be a women's shoe. The shoe is prominently displayed in the foreground, taking up most of the image.",
+    "baseline_generated": "The image features a white Adidas shoe with a pink sole, placed on a white background. The shoe is a sneaker with a laced-up design, and it appears to be a women's shoe. The shoe is the main focus of the image, with the background providing a clean and minimalistic setting."
+  },
+  {
+    "image_id": "003419848",
+    "prompt": "Render a clear and concise summary of the photo.",
+    "ground_truth": "the silk shorts in berry",
+    "mlp_generated": "The image features a pair of pink shorts with a black stripe down the side. The shorts are made of a shiny fabric, giving them a unique appearance. They are displayed on a white background, making the pink color stand out prominently. The shorts are positioned in a way that showcases their design and texture.",
+    "baseline_generated": "The image features a pair of pink shorts with a black stripe on the side. The shorts are made of a shiny material and have a slightly wrinkled appearance. They are displayed in a white background, making the pink color stand out prominently."
+  },
+  {
+    "image_id": "003279018",
+    "prompt": "Give a brief description of the image.",
+    "ground_truth": "patriots 31 jjb jones navy women's vapor vapor game jersey",
+    "mlp_generated": "The image features a blue jersey with the number 31 on it, representing the New England Patriots. The jersey is designed for a man and is displayed in a close-up view. The jersey is available in various sizes, as indicated by the different sizes of the jersey in the image. The close-up view showcases the details of the jersey, making it an appealing choice for fans of the New England Patriots.",
+    "baseline_generated": "The image features a blue jersey with the number 31 on it, representing the New England Patriots. The jersey is displayed in two different sizes, one larger and one smaller, showcasing the fit and style of the jersey. The larger jersey is positioned on the left side of the image, while the smaller jersey is on the right side. The jersey is designed for a man and is intended to be worn by fans of the Patriots team."
+  },
+  {
+    "image_id": "006082686",
+    "prompt": "Present a compact description of the photo's key features.",
+    "ground_truth": "a collection of christmas accessories including mugs, star and other items",
+    "mlp_generated": "The image features a white tray with a heart-shaped ornament hanging from a red ribbon. The heart is surrounded by various items, including a star ornament, a bowl, and a cup. The scene also includes a dining table with a bowl placed on it. The overall setting appears to be a festive and cozy atmosphere, possibly for a holiday celebration.",
+    "baseline_generated": "The image features a white tray with a heart-shaped ornament and a star ornament on it. The heart is positioned in the center of the tray, while the star is located towards the left side. The tray is placed on a dining table, which occupies the majority of the scene.\n\nIn addition to the tray, there are several cups and a bowl scattered around the table. Two cups can be seen on the left side of the table, while another cup is located on the right side. A bowl is placed near the center of the table. The overall scene gives an impression of a cozy and inviting atmosphere."
+  },
+  {
+    "image_id": "000849909",
+    "prompt": "Share a concise interpretation of the image provided.",
+    "ground_truth": "the secretary of the department of homeland addresses the media and the media room",
+    "mlp_generated": "The image features a woman standing in front of a large American flag, possibly giving a speech or addressing an audience. She is wearing a white jacket and a necklace, and her hair is styled in a ponytail. The woman appears to be the main focus of the scene, with the flag serving as a backdrop.",
+    "baseline_generated": "The image features a woman standing in front of a large American flag, giving a speech or addressing an audience. She is wearing a white jacket and appears to be the main focus of the scene. The flag is prominently displayed behind her, emphasizing the patriotic setting. The woman's speech seems to be of importance, as she is speaking into a microphone, ensuring her message is clearly heard by the audience."
+  },
+  {
+    "image_id": "000563284",
+    "prompt": "Provide a brief description of the given image.",
+    "ground_truth": "bamboo stalks with an inspirational quote",
+    "mlp_generated": "The image features a close-up of a bamboo plant with a heart-shaped design on it. The heart is surrounded by the bamboo stalks, creating a visually appealing scene. The heart is also accompanied by the words \"keep your heart strong,\" which are written in a stylized font. The overall composition of the image is focused on the heart and the bamboo plant, creating a sense of strength and resilience.",
+    "baseline_generated": "The image features a close-up of a bamboo plant with a heart-shaped design on it. The heart is adorned with the words \"keep your heart strong,\" which is written in a stylized font. The bamboo plant is the main focus of the image, with its distinctive pattern and texture."
+  },
+  {
+    "image_id": "000719900",
+    "prompt": "Write a terse but informative summary of the picture.",
+    "ground_truth": "a mosques background with islamic wallpaper",
+    "mlp_generated": "The image features a beautiful mosque with three domes, each adorned with a crescent moon. The mosque is situated in a large courtyard, and the scene is set against a backdrop of a cloudy sky. The overall atmosphere of the image is serene and peaceful, showcasing the architectural beauty of the mosque.",
+    "baseline_generated": "The image features a large mosque with a green background, which gives it a unique and vibrant appearance. The mosque is adorned with green stars and lettering, adding to its visual appeal. The mosque is surrounded by a courtyard, which is also covered in green tiles. The overall scene is a beautiful representation of a mosque, showcasing its architectural beauty and cultural significance."
+  },
+  {
+    "image_id": "000535602",
+    "prompt": "Share a concise interpretation of the image provided.",
+    "ground_truth": "a view of the village of lulworth, shropshire",
+    "mlp_generated": "The image features a picturesque scene of a small village situated on a hillside. The village is surrounded by a lush green field, and the houses are scattered throughout the area. There are several cars parked in front of the houses, indicating that the residents have arrived home. The village is also adorned with a few trees, adding to the serene atmosphere. The overall view of the village from the hillside provides a sense of tranquility and a peaceful coexistence with nature.",
+    "baseline_generated": "The image depicts a picturesque scene of a large, lush green field with a village nestled in the valley below. The village is surrounded by a beautiful landscape, with houses and buildings scattered throughout the area. The field is dotted with a few cows, grazing peacefully in the open space. The scene is further enhanced by the presence of a few cars and trucks, likely belonging to the residents of the village or visitors enjoying the scenic view. The overall atmosphere of the image is serene and idyllic, showcasing the beauty of rural life."
+  },
+  {
+    "image_id": "004439075",
+    "prompt": "What is this?",
+    "ground_truth": "an image of the legend of zelda character on an image of a legend of zelda",
+    "mlp_generated": "The image is a humorous cartoon featuring a character from the popular video game series, The Legend of Zelda. The character is holding a diamond sword, which is a key element in the game. The cartoon is accompanied by a caption that reads, \"umm... that's legend of zelda... your diamond sword has run out of durability.\" This playful commentary on the game's mechanics adds a lighthearted touch to the image.",
+    "baseline_generated": "The image is a black and white poster featuring a cartoon character from the popular video game series, The Legend of Zelda. The character is holding a sword, and the poster is titled \"umm... Minecraft... That's Legend of Zelda.\" The poster is likely a humorous take on the two games, Minecraft and The Legend of Zelda, as they are both well-known and beloved by many gamers."
+  },
+  {
+    "image_id": "003470475",
+    "prompt": "Share a concise interpretation of the image provided.",
+    "ground_truth": "a green toiler pattern in many sizes",
+    "mlp_generated": "The image is a white background with a slightly blurred appearance. It is a simple, plain white surface that does not contain any distinctive features or patterns. The white color of the background is uniform, creating a clean and minimalist look.",
+    "baseline_generated": "The image is a white background with a slightly blurred appearance. It is a simple and plain scene, with no distinct objects or patterns visible. The white color of the background creates a clean and minimalist look, making it suitable for various purposes, such as a wallpaper or a design element in a project."
+  },
+  {
+    "image_id": "002384974",
+    "prompt": "Provide a brief description of the given image.",
+    "ground_truth": "a brown and white flower umbrella",
+    "mlp_generated": "The image features a large, open umbrella with a brown and tan color scheme. The umbrella has a unique design, resembling a flower, with a pattern of leaves and petals. The umbrella is positioned in the center of the image, covering a significant portion of the background. The umbrella's handle is visible on the right side of the image, indicating that it is ready to be used.",
+    "baseline_generated": "The image features a large umbrella with a brown and tan color scheme, possibly made of silk. The umbrella is open and positioned in the center of the scene. The umbrella's design is intricate, with a pattern of leaves and flowers, giving it a unique and artistic appearance. The umbrella is held up by a black handle, which is located towards the right side of the image."
+  },
+  {
+    "image_id": "005757843",
+    "prompt": "What is this?",
+    "ground_truth": "naturerest mattresses by serta is a bed with a large headboard",
+    "mlp_generated": "The image features a large bed with a white comforter and pillows, placed in a bedroom. The bed is positioned under a window, allowing natural light to enter the room. The bed is accompanied by a couch, which is located to the left of the bed. \n\nIn addition to the bed and couch, there are several potted plants in the room, adding a touch of greenery and life to the space. One potted plant is placed near the bed, while two others are located on the left side of the room. Another potted plant is situated on the right side of the room, and the last one is placed near the couch.",
+    "baseline_generated": "The image features a large bed with a white comforter and pillows, placed in a bedroom. The bed is positioned next to a window, allowing natural light to enter the room. There are several pillows on the bed, including a few on the headboard, and a potted plant is located near the bed, adding a touch of greenery to the space. The bed appears to be a part of a larger bedroom setup, with a couch and a chair also visible in the room."
+  },
+  {
+    "image_id": "006015224",
+    "prompt": "Share a concise interpretation of the image provided.",
+    "ground_truth": "an antique linen pillow case with embroideredwork",
+    "mlp_generated": "The image features a white cloth with a monogrammed design, which includes the letters \"R\" and \"C\" on it. The monogram is embroidered on the cloth, giving it a decorative and personalized touch. The cloth is displayed in a close-up view, allowing the viewer to appreciate the intricate details of the embroidery.",
+    "baseline_generated": "The image features a white cloth with a monogrammed design, which includes the letter \"R\" and a decorative pattern. The monogram is embroidered on the cloth, giving it a unique and elegant appearance. The cloth is displayed in a close-up view, allowing the viewer to appreciate the intricate details of the embroidery."
+  },
+  {
+    "image_id": "006299950",
+    "prompt": "Summarize the visual content of the image.",
+    "ground_truth": "the word out of re - owned on a colorful tie dye background pillows",
+    "mlp_generated": "The image features a colorful, rainbow-themed pillow with the word \"Own\" written on it. The pillow is placed on a white background, making the vibrant colors stand out even more. The design is eye-catching and adds a fun, playful touch to the room.",
+    "baseline_generated": "The image features a colorful, rainbow-themed pillow with the word \"Owen\" written on it. The pillow is placed on a white background, making the vibrant colors stand out even more. The design is eye-catching and adds a fun, lively touch to the space."
+  },
+  {
+    "image_id": "001279242",
+    "prompt": "What is in the photo?",
+    "ground_truth": "the kabad is here to talk about an islamic woman's struggle with her husband",
+    "mlp_generated": "The photo features a man and a woman standing next to each other, with the woman wearing a colorful dress. There is also a foreign language sign or logo in the background, and the woman is looking at the camera.",
+    "baseline_generated": "The photo features a man and a woman standing next to each other, with the woman leaning against a wall. They are both dressed in traditional clothing, and there is a foreign language written on the wall behind them."
+  },
+  {
+    "image_id": "001112396",
+    "prompt": "Write a terse but informative summary of the picture.",
+    "ground_truth": "eternal flame - 1st edition",
+    "mlp_generated": "The image features a book cover with a title, \"Eternal Flame,\" written by Greg Egan. The cover showcases a large, futuristic cityscape with a prominent clock tower. The scene is set against a backdrop of a night sky, with a moon visible in the upper right corner. The book appears to be a science fiction novel, as indicated by the futuristic city and the author's name.",
+    "baseline_generated": "The image features a book cover with a title, \"Eternal Flame,\" written in bold letters. The cover is predominantly blue, with a large moon in the background. The moon is surrounded by a ring of fire, creating a striking visual effect. The book appears to be a science fiction or fantasy novel, with the moon and fire symbolizing a powerful force or element within the story."
+  },
+  {
+    "image_id": "005057908",
+    "prompt": "Share a concise interpretation of the image provided.",
+    "ground_truth": "a close up image of the back section of the ospree 42 backpack",
+    "mlp_generated": "The image features a backpack with a teal and gray color scheme, which is hanging on a wall. The backpack is a large, lightweight, and comfortable pack designed for outdoor activities. The backpack is equipped with a padded back and a ventilated design, making it suitable for various outdoor adventures.",
+    "baseline_generated": "The image features a backpack with a teal and gray color scheme, sitting on a white background. The backpack is designed with a mesh-like pattern, making it suitable for outdoor activities. The backpack is large and occupies most of the image, with its top visible in the upper part of the frame."
+  },
+  {
+    "image_id": "001004299",
+    "prompt": "Write a terse but informative summary of the picture.",
+    "ground_truth": "a news anchor interviews a women's cancer event",
+    "mlp_generated": "The image features a woman wearing a pink dress, standing in front of a microphone and talking to a man. The woman appears to be a reporter, and the man is wearing a pink shirt. They are both engaged in a conversation, possibly discussing a news story or event.\n\nIn the background, there are several other people present, some of whom are wearing ties. The scene seems to be taking place in a social setting, with a dining table visible in the background.",
+    "baseline_generated": "The image features two women standing next to each other, engaged in a conversation. One of the women is wearing a pink jacket and holding a microphone, likely conducting an interview or hosting an event. The other woman is wearing a black and white dress.\n\nIn the background, there are several other people present, some of whom are also wearing ties. The scene appears to be a social gathering or a public event where the two women are discussing a topic or sharing their thoughts with the audience."
+  },
+  {
+    "image_id": "005557482",
+    "prompt": "Share a concise interpretation of the image provided.",
+    "ground_truth": "the african map of africa canvas print",
+    "mlp_generated": "The image features a large, detailed map of Africa, showcasing the continent's various countries and regions. The map is displayed on a white background, making it easy to read and identify the different territories. The map is likely used for educational or travel purposes, providing a comprehensive view of the African continent.",
+    "baseline_generated": "The image features a large, detailed map of Africa, showcasing the continent's various countries and regions. The map is displayed on a white background, making it easy to read and identify the different territories. The map is likely used for educational or reference purposes, providing a comprehensive view of the African continent."
+  },
+  {
+    "image_id": "003891877",
+    "prompt": "Render a clear and concise summary of the photo.",
+    "ground_truth": "a man walks past the tiffany - co headquarters in dublin, ireland",
+    "mlp_generated": "The image features a woman walking in front of a building, likely a Tiffany & Co. store. She is wearing a black coat and carrying a handbag. The woman appears to be walking towards the entrance of the store, possibly to browse or make a purchase. The scene captures the essence of a typical day in a city, with people going about their daily activities.",
+    "baseline_generated": "The image features a woman walking past a large glass window, which displays the Tiffany & Co. logo. She is wearing a black coat and appears to be carrying a handbag. The woman is walking on a sidewalk, and the scene captures her passing by the iconic storefront."
+  },
+  {
+    "image_id": "004003721",
+    "prompt": "Give a short and clear explanation of the subsequent image.",
+    "ground_truth": "a grey ball shaped vase sitting on top of a black stand",
+    "mlp_generated": "The image features a large, gray, round object sitting on a gray floor. The object appears to be a large vase or a large metal container, possibly made of metal. It is positioned in the center of the scene, with a white wall in the background. The overall setting seems to be a simple and minimalistic display of the large object.",
+    "baseline_generated": "The image features a large, round, gray vase or pottery piece sitting on a blue surface. The vase is positioned in the center of the scene, and its unique shape and color make it stand out. The blue surface beneath the vase could be a table or a countertop, providing a contrasting background for the vase."
+  },
+  {
+    "image_id": "005842801",
+    "prompt": "Write a terse but informative summary of the picture.",
+    "ground_truth": "the grey flat shoe is a comfortable, low profile shoe for comfort",
+    "mlp_generated": "The image features a pair of gray shoes with a wooden sole, sitting on a white background. The shoes have a simple design and are placed side by side, showcasing their unique wooden sole. The shoes are positioned in a way that allows the viewer to see the entirety of the pair, emphasizing their distinctive appearance.",
+    "baseline_generated": "The image features a pair of gray shoes with a wooden sole, sitting on a white background. The shoes have a simple design and are likely comfortable to wear. The close-up view of the shoes highlights their unique wooden sole, making them stand out as a distinctive footwear choice."
+  },
+  {
+    "image_id": "006558367",
+    "prompt": "Render a clear and concise summary of the photo.",
+    "ground_truth": "japanese flower pattern duvet cover",
+    "mlp_generated": "The image features a white and beige fabric with a beautiful floral pattern. The pattern consists of various flowers, including a large pink flower, a yellow flower, and a blue flower. The flowers are scattered across the fabric, creating a visually appealing design. The combination of colors and the intricate details of the flowers make the fabric stand out as an attractive and elegant material.",
+    "baseline_generated": "The image features a bed with a white comforter and a tan blanket. The blanket has a floral pattern with a variety of flowers, including pink and blue ones, as well as some leaves. The bed is well-made, with the blanket neatly arranged and the sheets properly tucked in. The overall appearance of the bed is cozy and inviting."
+  },
+  {
+    "image_id": "005356986",
+    "prompt": "Share a concise interpretation of the image provided.",
+    "ground_truth": "a drawing of two people wearing star uniforms",
+    "mlp_generated": "The image features two cartoon characters, both wearing white and red outfits, standing next to each other and holding weapons. One of the characters is holding a sword, while the other has a gun. The characters appear to be posing for a picture, with one of them smiling. The scene is set against a backdrop of stars, adding a celestial touch to the image.",
+    "baseline_generated": "The image features two cartoon characters, both wearing white and red outfits, standing next to each other. They are holding swords, with one sword being larger and positioned horizontally, while the other sword is smaller and held vertically. The characters appear to be posing for a picture, and they are standing on a star-filled background."
+  },
+  {
+    "image_id": "004562411",
+    "prompt": "Present a compact description of the photo's key features.",
+    "ground_truth": "the kindle fire hdx tablet",
+    "mlp_generated": "The image features a tablet screen displaying a variety of movies and TV shows. There are four main movie posters on the screen, with one being a Hunger Games poster. The other three posters are for different movies, showcasing a diverse selection of films. The tablet screen is the main focus of the image, and it is placed on a table, making it the center of attention.",
+    "baseline_generated": "The image features a tablet computer screen displaying a variety of movies and TV shows. There are several movie posters on the screen, including titles like \"The Hunger Games,\" \"Facebook,\" \"The Lorax,\" and \"The Lion King.\" The tablet screen is filled with these movie posters, showcasing a diverse selection of entertainment options."
+  },
+  {
+    "image_id": "003641750",
+    "prompt": "Provide a brief description of the given image.",
+    "ground_truth": "the article is that the global consumer culture has been evolving and has already become a competitive one",
+    "mlp_generated": "The image features a black background with white text that reads \"Global Consumer Culture: Self-Esteem & Body Image.\" The text is centered and bold, drawing attention to the topic. The image is a simple and clean representation of the subject matter.",
+    "baseline_generated": "The image features a black background with white text that reads \"Global Consumer Culture.\" The text is positioned in the center of the image, with the words \"Self Esteem & Body Image\" written below it. The overall composition of the image is minimalistic, focusing on the text and its message."
+  },
+  {
+    "image_id": "000956204",
+    "prompt": "Provide a brief description of the given image.",
+    "ground_truth": "a youtube api key",
+    "mlp_generated": "The image features a red and white stamp with the words \"API Key\" written on it. The stamp is placed on top of a YouTube logo, indicating a connection between the two. The stamp is positioned in the center of the image, with the YouTube logo surrounding it.",
+    "baseline_generated": "The image features a red and white stamp with the words \"API Key\" written on it. The stamp is placed on a white background, making it the focal point of the image. The stamp's design resembles a YouTube logo, giving it a distinctive and recognizable appearance."
+  },
+  {
+    "image_id": "000840339",
+    "prompt": "Summarize the visual content of the image.",
+    "ground_truth": "a book with the title migrant in the city the life of a puerto rican action group",
+    "mlp_generated": "The image features a person holding an orange book titled \"In the City: The Life of a Puerto Rican Action Group.\" The book is open, displaying a colorful cover with a tree and a fish. The person holding the book is positioned on the left side of the image, while the book occupies most of the right side. The scene appears to be set in a room with a dining table in the background.",
+    "baseline_generated": "The image features a person holding a book titled \"Migrant in the City: The Life of a Puerto Rican Action Group.\" The book is orange and has a black and white cover. The person is standing near a computer keyboard, which is placed on a desk in the background. The scene suggests that the person might be reading or discussing the book while working on the computer."
+  },
+  {
+    "image_id": "004039253",
+    "prompt": "Give a brief description of the image.",
+    "ground_truth": "a louis vuittaine backpack in monogram canvas",
+    "mlp_generated": "The image features a brown Louis Vuitton backpack with a brown strap. The backpack is hanging on a white background, showcasing its design and colors. The backpack is a popular choice for fashion-conscious individuals, and its distinctive design makes it easily recognizable.",
+    "baseline_generated": "The image features a brown Louis Vuitton backpack with a gold buckle and a brown handle. The backpack is hanging on a white background, making it the main focus of the scene. The backpack is designed with a combination of brown and gold colors, giving it a luxurious and elegant appearance."
+  },
+  {
+    "image_id": "003484871",
+    "prompt": "Write a terse but informative summary of the picture.",
+    "ground_truth": "a dinosaur theme for preschool and students to use with their lesson plan",
+    "mlp_generated": "The image features a dinosaur theme with a green and white background. A dinosaur is prominently displayed on the left side of the image, while a triceratops is visible on the right side. A smiling dinosaur is also present in the middle of the image. The scene is accompanied by a text that reads \"Dinosaur Preschool Lesson Plans.\"",
+    "baseline_generated": "The image features a dinosaur theme with a green and white background. A dinosaur is prominently displayed on the left side of the image, while a rhino is on the right side. The dinosaur is smiling, and the rhino appears to be walking. The scene also includes a pre-school lesson plan for dinosaurs, which is likely related to the theme of the image."
+  },
+  {
+    "image_id": "003314109",
+    "prompt": "What is in the photo?",
+    "ground_truth": "wedding invitation with an alternative addressing card that says the day and night on it",
+    "mlp_generated": "The photo features a card or invitation for a wedding, which is addressed to Mr. and Mrs. Dylan.",
+    "baseline_generated": "The photo features a card or invitation that reads \"Are getting married 8.14.15\" and is addressed to Dylan and Arianna."
+  },
+  {
+    "image_id": "002466603",
+    "prompt": "Render a clear and concise summary of the photo.",
+    "ground_truth": "commercial frying and cutting potato chips making machine",
+    "mlp_generated": "The image features a large machine, possibly a potato chip maker, with a conveyor belt and a metal structure. The machine is situated in a factory setting. Next to the machine, there is a pile of potato chips, with some of them scattered on the floor. The chips are in various sizes and shapes, indicating that they are freshly made. The scene showcases the process of potato chip production and the final product.",
+    "baseline_generated": "The image features a large machine, likely a potato chip maker, with a conveyor belt and a fryer. The machine is designed to produce potato chips, as evidenced by the numerous chips that are visible on the conveyor belt. The chips are in various stages of production, with some closer to the fryer and others further away. The machine is situated in a kitchen setting, and the chips are ready to be packaged and enjoyed."
+  },
+  {
+    "image_id": "002736003",
+    "prompt": "Give a brief description of the image.",
+    "ground_truth": "the pointed toe python ankle boots in brown",
+    "mlp_generated": "The image features a pair of high-heeled boots with a snake skin pattern. The boots are placed on a white surface, which could be a table or a floor. The boots are the main focus of the image, and they are positioned in a way that showcases their design and texture.",
+    "baseline_generated": "The image features a pair of high-heeled boots with a snake print design. The boots are placed on a white surface, which could be a table or a floor. The snake print adds a unique and stylish touch to the boots, making them stand out as a fashionable accessory."
+  },
+  {
+    "image_id": "000589091",
+    "prompt": "Share a concise interpretation of the image provided.",
+    "ground_truth": "the pocket for the travel wallet",
+    "mlp_generated": "The image features a pile of three different colored pouches, with one being orange and the other two being brown. The pouches are placed on top of a mossy surface, possibly a forest floor or a plant. The arrangement of the pouches creates a visually appealing contrast against the natural background.",
+    "baseline_generated": "The image features a pile of moss with a few items on top of it. There are three small bags, each with a different color: one is orange, another is brown, and the third one is tan. The bags are placed on the moss, creating a contrast between the natural greenery and the man-made objects. The scene appears to be a mix of nature and human-made items, possibly indicating a hiking or outdoor activity."
+  },
+  {
+    "image_id": "005323617",
+    "prompt": "Describe the image concisely.",
+    "ground_truth": "the destroyed city of ramat, jordan",
+    "mlp_generated": "The image is an aerial view of a city with a mix of old and new buildings. The city appears to be in a state of disrepair, with many buildings appearing to be in ruins. The buildings are scattered throughout the scene, with some closer to the foreground and others further in the background.\n\nThere is a large, empty space in the middle of the city, which seems to be a focal point of the scene. The overall atmosphere of the image is one of decay and abandonment, with the city appearing to be in a state of neglect.",
+    "baseline_generated": "The image is an aerial view of a city, showcasing a large area of buildings and structures. The buildings are arranged in a grid-like pattern, with some appearing to be old and dilapidated. The scene is captured from a high angle, providing a clear view of the city's layout.\n\nThere are several buildings in the image, with some located closer to the foreground and others further in the background. The buildings vary in size and shape, creating a diverse urban landscape. The overall atmosphere of the image suggests a city that has experienced some wear and tear over time."
+  },
+  {
+    "image_id": "001161267",
+    "prompt": "Present a compact description of the photo's key features.",
+    "ground_truth": "the back of the mercedes - benz cls",
+    "mlp_generated": "The image features a silver Mercedes-Benz parked in a garage. The car is positioned in the center of the scene, with its back end visible. The license plate on the car reads \"BKI 4822.\" The garage appears to be well-lit, and the car is the main focus of the scene.",
+    "baseline_generated": "The image features a silver Mercedes-Benz car parked in a showroom or dealership. The car is on display, showcasing its sleek design and luxurious appearance. The car is parked in a spot that allows it to be the center of attention, with a large window in the background. The car's license plate is visible, indicating that it is ready for sale or demonstration."
+  },
+  {
+    "image_id": "005623744",
+    "prompt": "Provide a brief description of the given image.",
+    "ground_truth": "a living room with a glass bar in the middle of it",
+    "mlp_generated": "The image depicts a spacious and well-lit living room with a modern design. The room features a large couch situated in the center, surrounded by several chairs and a dining table. The couch is positioned in front of a bar, creating a cozy and inviting atmosphere. \n\nIn addition to the seating arrangements, there are multiple decorative elements in the room. A vase can be seen on the dining table, and a potted plant is placed near the couch. The room also has a few books scattered around, adding a touch of personalization to the space. The overall design of the room is contemporary and stylish, making it an ideal space for relaxation and socializing.",
+    "baseline_generated": "The image showcases a spacious and modern living room with a large glass wall. The room is filled with various pieces of furniture, including a couch, a chair, and several tables. The couch is positioned in the center of the room, while the chair is located towards the left side. \n\nThere are multiple tables scattered throughout the room, with one near the couch, another near the chair, and a few others placed around the room. A potted plant can be seen in the room, adding a touch of greenery to the space. The overall atmosphere of the room is inviting and comfortable, with a contemporary design."
+  },
+  {
+    "image_id": "001482097",
+    "prompt": "Summarize the visual content of the image.",
+    "ground_truth": "battery monitoring software for windows and macintosh",
+    "mlp_generated": "The image features a collection of various electronic devices and batteries, showcasing a wide range of items. There are several batteries of different sizes and shapes, as well as a cell phone, a laptop, and a computer mouse. The items are arranged in a visually appealing manner, with some of them placed in a box. The scene appears to be a display of electronic devices and batteries, possibly for sale or demonstration purposes.",
+    "baseline_generated": "The image features a collection of various electronic devices, including a laptop, a cell phone, and a computer mouse. These devices are displayed in a way that suggests they are being reconditioned or repaired. The laptop is placed in the center of the image, while the cell phone is located towards the left side. The computer mouse is situated on the right side of the image.\n\nIn addition to the electronic devices, there are several batteries scattered throughout the scene, indicating that they are being used or prepared for use in the reconditioning process. The batteries are of different sizes and are placed in various positions, with some located near the laptop and others near the cell phone."
+  },
+  {
+    "image_id": "002207223",
+    "prompt": "Render a clear and concise summary of the photo.",
+    "ground_truth": "the softline by b & b italia, a modular seating solution",
+    "mlp_generated": "The image features a white, modern-looking chair with a cushion on it. The chair is positioned in the center of the scene, and it appears to be a comfortable and stylish piece of furniture. The chair's design and color make it stand out as a unique and visually appealing piece.",
+    "baseline_generated": "The image features a white, modern-looking chair with a cushion on it. The chair is positioned in the center of the scene, and it appears to be a comfortable and stylish piece of furniture. The chair's design and color make it stand out as a unique and eye-catching piece in the room."
+  },
+  {
+    "image_id": "002852829",
+    "prompt": "Summarize the visual content of the image.",
+    "ground_truth": "a - frame home, sleeps in the woods and is ready for you to go",
+    "mlp_generated": "The image features a large, two-story house with a deck and a balcony. The house is surrounded by a lush green forest, providing a serene and peaceful atmosphere. The deck and balcony are situated on the second floor of the house, offering a great view of the surrounding trees.\n\nThere are several chairs placed around the deck and balcony, inviting people to sit and enjoy the view. Additionally, a potted plant can be seen on the deck, adding a touch of greenery to the scene. The house is situated on a gravel driveway, which is located near the forest.",
+    "baseline_generated": "The image features a large, two-story house with a deck and a garage. The house is situated in a wooded area, surrounded by trees. The deck is located on the second floor, providing a nice view of the surrounding forest. The house has a driveway leading up to it, and there is a car parked nearby. The scene gives off a peaceful and serene atmosphere, perfect for relaxation and enjoying nature."
+  },
+  {
+    "image_id": "003928900",
+    "prompt": "Give a short and clear explanation of the subsequent image.",
+    "ground_truth": "kids soccer player on the ball in a yellow background text reads 2014 summer workshops in montana",
+    "mlp_generated": "The image features a cartoon drawing of a young boy holding a soccer ball. The boy is standing on a green field, possibly in Metro Manila, as he is participating in a summer workshop. The scene is set against a backdrop of a yellow and green color scheme, which adds to the vibrant atmosphere of the image.",
+    "baseline_generated": "The image features a cartoon illustration of a young boy playing soccer, kicking a soccer ball with his foot. The boy is wearing a white shirt and green shorts, and he appears to be enjoying the game. The scene is set against a backdrop of a yellow and green color scheme, which adds to the vibrant and lively atmosphere of the image."
+  },
+  {
+    "image_id": "001808865",
+    "prompt": "What is in the photo?",
+    "ground_truth": "the clouds over the sea at sunset iphone 5 covers",
+    "mlp_generated": "The photo features a beautiful sunset over the ocean, with a blue sky and clouds in the background.",
+    "baseline_generated": "The photo features a beautiful sunset over the ocean, with a cloudy sky and a blue background."
+  },
+  {
+    "image_id": "003422230",
+    "prompt": "Write a terse but informative summary of the picture.",
+    "ground_truth": "a weather vane with a weather rod and other weather indicators sitting on top of a roof",
+    "mlp_generated": "The image features a weather vane on top of a red brick building, which is likely a house. The weather vane is mounted on a black pole and has a wind indicator, indicating the direction of the wind. The scene is set against a blue sky, creating a pleasant and clear atmosphere.",
+    "baseline_generated": "The image features a weather vane on top of a red brick building. The weather vane is black and white and has the letters \"Ks\" on it. The building has a shingled roof, and the weather vane is mounted on a pole. The scene is set against a blue sky, creating a contrast between the red brick building and the weather vane."
+  },
+  {
+    "image_id": "005245840",
+    "prompt": "What is in the photo?",
+    "ground_truth": "a black winter boot with grey outs and gray sole",
+    "mlp_generated": "The photo features a pair of snow boots, which are gray and black in color.",
+    "baseline_generated": "The photo features a pair of snow boots, which are gray and black in color."
+  },
+  {
+    "image_id": "000348676",
+    "prompt": "What is this?",
+    "ground_truth": "bat in the band book by person paperback, 2003",
+    "mlp_generated": "The image features a group of bats playing in a band. There are five bats in total, each with their own unique appearance and position. Some of the bats are holding musical instruments, such as a guitar and a drum, while others are simply enjoying the performance. The bats are arranged in a way that creates a lively and engaging scene, showcasing their musical talents and camaraderie.",
+    "baseline_generated": "The image features a group of bats playing musical instruments, creating a lively scene. There are several bats in the scene, with some of them holding guitars and others playing drums. The bats are arranged in various positions, with some standing closer to the foreground and others further in the background. The scene appears to be a playful and imaginative illustration, possibly from a children's book or a creative artwork."
+  },
+  {
+    "image_id": "000910954",
+    "prompt": "What is in the photo?",
+    "ground_truth": "a bed topper with a pillow on it",
+    "mlp_generated": "The photo features a bed with a white comforter and pillows, placed on a wooden floor.",
+    "baseline_generated": "The photo features a bed with a white comforter and pillows on it."
+  },
+  {
+    "image_id": "001957582",
+    "prompt": "Provide a brief description of the given image.",
+    "ground_truth": "the apple charger is made from genuine 65w macbook air's home power adapter",
+    "mlp_generated": "The image features a white charger, likely for an iPhone, sitting on a white background. The charger is square-shaped and has a USB plug on the side. The charger is positioned in the center of the image, with its plug facing the left side.",
+    "baseline_generated": "The image features a white charger, which is a square-shaped device with a USB plug on the side. The charger is connected to a power source, and it is ready to charge a device. The charger is placed on a white background, making it the main focus of the image."
+  },
+  {
+    "image_id": "000637096",
+    "prompt": "What is this?",
+    "ground_truth": "a decision tree",
+    "mlp_generated": "The image is a text-based diagram that illustrates the process of planning and computing. It consists of two main parts: a decision tree and a flowchart. The decision tree is a visual representation of the decision-making process, with branches leading to different outcomes. The flowchart, on the other hand, shows the steps involved in the planning process, with arrows connecting the different stages.\n\nThe text accompanying the diagram provides additional information about the process, explaining that the decision tree guides the planning process of computing the complete answer to a query. The two approaches are depicted as optimistic and pessimistic, indicating different strategies for tackling the problem. The flowchart further elaborates on the steps involved in the planning process, with the decision tree serving as a visual representation of the decision-making aspect of the process.",
+    "baseline_generated": "This is a text document that outlines the process of creating a decision tree. The document explains that a decision tree is a flowchart-like structure that helps guide the planning process of computing the complete answer to a query. It consists of two approaches while traversing the tree: optimistic and pessimistic. The optimistic approach is used when the decision tree is being built, while the pessimistic approach is used when the tree is being searched. The document provides a clear explanation of the decision tree concept and its application in various scenarios."
+  },
+  {
+    "image_id": "002208307",
+    "prompt": "What is in the photo?",
+    "ground_truth": "three women in a library looking at bookshelves stock photo",
+    "mlp_generated": "The photo features a group of people, including a woman, looking at and interacting with a display of books. They are standing in front of a bookcase, possibly in a library or a bookstore.",
+    "baseline_generated": "The photo features a group of people, including a woman, looking at and playing with a large wooden organ."
+  },
+  {
+    "image_id": "002288527",
+    "prompt": "What is this?",
+    "ground_truth": "girls gold tasselled plimsoles",
+    "mlp_generated": "The image features a white background with a pair of tan shoes on display. The shoes have a gold buckle and are designed with a white sole. They are placed on a flat surface, possibly a table, and are the main focus of the image. The shoes appear to be stylish and well-made, making them an attractive choice for footwear.",
+    "baseline_generated": "The image features a white background with a pair of shoes prominently displayed. The shoes are a beige color and have a gold buckle, giving them a stylish and elegant appearance. The shoes are placed on a white surface, which further emphasizes their color and design."
+  }
+]

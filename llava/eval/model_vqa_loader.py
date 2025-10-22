@@ -168,14 +168,6 @@ def eval_model(args):
                                    "metadata": {}}) + "\n")
         # ans_file.flush()
     ans_file.close()
-
-    # pruning_info_file = os.path.join(os.path.dirname(args.answers_file), "pruning_instructions.json")
-    # try:
-    #     with open(pruning_info_file, "w") as f_prune:
-    #         json.dump(pruning_info_list, f_prune, indent=2)
-    #     print(f"剪枝指令已成功保存到 {pruning_info_file}")
-    # except Exception as e:
-    #     print(f"保存剪枝指令到 {pruning_info_file} 时出错: {e}")
         
     avg_token_num = sum(visual_token_nums) / len(visual_token_nums)
     print(f"Average number of visual tokens: {avg_token_num}")

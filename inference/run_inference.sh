@@ -3,6 +3,10 @@
 # Run inference using precomputed MLP-aligned embeddings with LLaVA 13B
 # This script loads precomputed embeddings and generates text responses
 
+# GPU selection (default: 0)
+GPU_ID=${1:-0}
+export CUDA_VISIBLE_DEVICES=$GPU_ID
+
 # ============================================================================
 # Configuration - Modify these paths according to your setup
 # ============================================================================
@@ -12,20 +16,20 @@ MODEL_13B="checkpoints/llava-v1.5-13b"
 
 # Data paths
 EMBEDDINGS_DIR="inference/embeddings"
-JSON_PATH="inference/blip_laion_cc_sbu_558k.json"
+JSON_PATH="inference/200_test.json"
 
 # Output path
 OUTPUT_FILE="inference/results/inference_results.json"
 
 # Generation parameters
 CONV_MODE="llava_v1"
-MAX_NEW_TOKENS=512
+MAX_NEW_TOKENS=1024
 TEMPERATURE=0.2
 TOP_P=0.7
 
 # Processing options
 BATCH_SIZE=1  # Currently only supports 1
-MAX_SAMPLES=10  # Leave empty to process all samples, or set a number for testing
+MAX_SAMPLES= # Leave empty to process all samples, or set a number for testing
 
 # Precision
 USE_BF16="--bf16"  # Comment out to use float32
@@ -37,6 +41,7 @@ USE_BF16="--bf16"  # Comment out to use float32
 echo "=========================================="
 echo "Running inference with LLaVA 13B"
 echo "=========================================="
+echo "GPU: $GPU_ID"
 echo "Model 13B: $MODEL_13B"
 echo "Embeddings dir: $EMBEDDINGS_DIR"
 echo "JSON path: $JSON_PATH"

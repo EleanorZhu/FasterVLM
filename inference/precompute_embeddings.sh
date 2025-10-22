@@ -4,6 +4,10 @@
 # This script processes images through LLaVA 7B + MLP alignment
 # and saves the aligned embeddings for later inference
 
+# GPU selection (default: 0)
+GPU_ID=${1:-0}
+export CUDA_VISIBLE_DEVICES=$GPU_ID
+
 # ============================================================================
 # Configuration - Modify these paths according to your setup
 # ============================================================================
@@ -13,8 +17,8 @@ MODEL_7B="checkpoints/llava-v1.5-7b"
 MLP_CHECKPOINT="checkpoints/contrastive-mlp-cc/best_mlp_alignment.pt"
 
 # Dataset paths
-CC_ROOT="playground/data/CC"
-JSON_PATH="inference/blip_laion_cc_sbu_558k.json"
+CC_ROOT="playground/data/CC_200"
+JSON_PATH="inference/200_test.json"
 
 # Output directory
 OUTPUT_DIR="inference/embeddings"
@@ -27,7 +31,7 @@ MM_VISION_SELECT_FEATURE="patch"
 # Processing options
 BATCH_SIZE=8
 NUM_WORKERS=4
-MAX_SAMPLES=10  # Leave empty to process all samples, or set a number for testing
+MAX_SAMPLES= # Leave empty to process all samples, or set a number for testing
 
 # Precision
 USE_BF16="--bf16"  # Comment out to use float32
@@ -39,6 +43,7 @@ USE_BF16="--bf16"  # Comment out to use float32
 echo "=========================================="
 echo "Precomputing MLP-aligned embeddings"
 echo "=========================================="
+echo "GPU: $GPU_ID"
 echo "Model 7B: $MODEL_7B"
 echo "MLP checkpoint: $MLP_CHECKPOINT"
 echo "CC root: $CC_ROOT"

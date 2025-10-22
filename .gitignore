@@ -31,6 +31,7 @@ checkpoints/
 
 # Data
 playground/data/
+
 tmp_imgs/
 
 # Allow placeholders and docs under eval (but keep large data ignored)

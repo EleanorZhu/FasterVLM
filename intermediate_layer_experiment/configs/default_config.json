@@ -1,0 +1,32 @@
+{
+  "experiment_name": "intermediate_layer_feedback",
+  "description": "Extract embeddings from intermediate LLM layer and feed back as input",
+  
+  "model": {
+    "base_model_path": "/home/qingchan/project/FasterVLM/checkpoints/llava-v1.5-7b",
+    "intermediate_layer_idx": 3,
+    "use_intermediate_feedback": true,
+    "visual_token_num": 576
+  },
+  
+  "evaluation": {
+    "dataset": "textvqa",
+    "question_file": "./playground/data/eval/textvqa/llava_textvqa_val_v051_ocr.jsonl",
+    "image_folder": "./playground/data/eval/textvqa/train_images",
+    "annotation_file": "./playground/data/eval/textvqa/TextVQA_0.5.1_val.json"
+  },
+  
+  "inference": {
+    "temperature": 0.0,
+    "top_p": null,
+    "num_beams": 1,
+    "max_new_tokens": 1024,
+    "conv_mode": "vicuna_v1"
+  },
+  
+  "notes": {
+    "layer_options": "LLaMA-7B has 32 layers (0-31). Common choices: 3, 7, 15, 23, 31",
+    "visual_token_num": "576 for full resolution, lower values for pruned tokens (e.g., 144, 256)"
+  }
+}
+
