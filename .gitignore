@@ -64,3 +64,9 @@ ENV/
 env.bak/
 venv.bak/
 
+
+# Large data files
+inference/data/*.json
+!inference/data/.gitkeep
+13B_inference/*.json
+!13B_inference/.gitkeep
