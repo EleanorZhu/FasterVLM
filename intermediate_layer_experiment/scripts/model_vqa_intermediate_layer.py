@@ -26,7 +26,10 @@ from PIL import Image
 import math
 
 # Import our custom model
-from intermediate_layer_experiment.model import LlavaIntermediateLayerForCausalLM
+# Use the Fixed version to match the training script
+from intermediate_layer_experiment.model.llava_intermediate_layer_fixed import (
+    LlavaIntermediateLayerForCausalLMFixed as LlavaIntermediateLayerForCausalLM
+)
 
 
 def split_list(lst, n):
@@ -88,7 +91,15 @@ def create_data_loader(questions, image_folder, tokenizer, image_processor, mode
     return data_loader
 
 
-def load_model_with_intermediate_layer(model_path, intermediate_layer_idx, visual_token_num=None, use_intermediate_feedback=True):
+def load_model_with_intermediate_layer(
+    model_path,
+    intermediate_layer_idx,
+    visual_token_num=None,
+    use_intermediate_feedback=True,
+    prompt_tokens_path=None,
+    num_prompt_tokens=20,
+    prompt_init_method="random"
+):
     """
     Load the LLaVA model and convert it to use intermediate layer feedback.
 
@@ -97,6 +108,9 @@ def load_model_with_intermediate_layer(model_path, intermediate_layer_idx, visua
         intermediate_layer_idx: Which layer to extract embeddings from
         visual_token_num: Number of visual tokens (for FasterVLM)
         use_intermediate_feedback: Whether to use intermediate layer feedback (default: True)
+        prompt_tokens_path: Path to trained prompt tokens checkpoint (optional)
+        num_prompt_tokens: Number of prompt tokens (used if prompt_tokens_path is provided)
+        prompt_init_method: How to initialize prompt tokens if not loading from checkpoint
 
     Returns:
         tokenizer, model, image_processor, context_len
@@ -111,11 +125,13 @@ def load_model_with_intermediate_layer(model_path, intermediate_layer_idx, visua
         print(f"Loading LLaVA model without intermediate layer feedback (using projector output only)...")
 
     # Load the standard model first to get everything initialized properly
-    # Use device="cuda:0" to ensure all components are on the same device
+    # Use device="cuda:0" and device_map="cuda:0" to ensure all components are on the same device
+    # This prevents accelerate from splitting the model across multiple GPUs
     model_name = get_model_name_from_path(model_path)
     tokenizer, base_model, image_processor, context_len = load_pretrained_model(
         model_path, None, model_name,
         visual_token_num=visual_token_num,
+        device_map="cuda:0",
         device="cuda:0"
     )
 
@@ -130,6 +146,16 @@ def load_model_with_intermediate_layer(model_path, intermediate_layer_idx, visua
     custom_config = base_model.config
     custom_config.intermediate_layer_idx = intermediate_layer_idx
     custom_config.use_intermediate_feedback = use_intermediate_feedback
+
+    # Configure prompt tuning if checkpoint is provided
+    use_prompt_tuning = prompt_tokens_path is not None
+    if use_prompt_tuning:
+        print(f"Enabling prompt tuning with {num_prompt_tokens} tokens...")
+        custom_config.use_prompt_tuning = True
+        custom_config.num_prompt_tokens = num_prompt_tokens
+        custom_config.prompt_init_method = prompt_init_method
+    else:
+        custom_config.use_prompt_tuning = False
 
     # Create our custom model with the same weights
     custom_model = LlavaIntermediateLayerForCausalLM(
@@ -147,6 +173,14 @@ def load_model_with_intermediate_layer(model_path, intermediate_layer_idx, visua
         custom_model.get_model().mm_projector = base_model.get_model().mm_projector
         if hasattr(base_model.get_model(), 'image_newline'):
             custom_model.get_model().image_newline = base_model.get_model().image_newline
+
+    # Load trained prompt tokens if provided
+    if use_prompt_tuning and prompt_tokens_path:
+        print(f"Loading trained prompt tokens from {prompt_tokens_path}...")
+        checkpoint = torch.load(prompt_tokens_path, map_location='cpu')
+        custom_model.prompt_embeddings.data = checkpoint['prompt_embeddings']
+        print(f"Loaded prompt tokens from epoch {checkpoint.get('epoch', 'unknown')}, "
+              f"val_loss: {checkpoint.get('val_loss', 'unknown'):.4f}")
 
     # Move to GPU and set to eval mode
     # Use cuda:0 explicitly to avoid device mismatch
@@ -178,7 +212,10 @@ def eval_model(args):
         model_path,
         args.intermediate_layer_idx,
         visual_token_num=args.visual_token_num,
-        use_intermediate_feedback=args.use_intermediate_feedback
+        use_intermediate_feedback=args.use_intermediate_feedback,
+        prompt_tokens_path=args.prompt_tokens_path,
+        num_prompt_tokens=args.num_prompt_tokens,
+        prompt_init_method=args.prompt_init_method
     )
     
     # Data
@@ -202,18 +239,19 @@ def eval_model(args):
         idx = line["question_id"]
         cur_prompt = line["text"]
 
-        input_ids = input_ids.to(device='cuda', non_blocking=True)
+        input_ids = input_ids.to(device='cuda:0', non_blocking=True)
 
         with torch.inference_mode():
             output_ids, v_token_num, image_attns = model.generate(
                 input_ids,
-                images=image_tensor.to(dtype=torch.float16, device='cuda', non_blocking=True),
+                images=image_tensor.to(dtype=torch.float16, device='cuda:0', non_blocking=True),
                 image_sizes=image_sizes,
                 do_sample=True if args.temperature > 0 else False,
                 temperature=args.temperature,
                 top_p=args.top_p,
                 num_beams=args.num_beams,
                 max_new_tokens=args.max_new_tokens,
+                repetition_penalty=1.2,  # Add repetition penalty to prevent infinite loops
                 use_cache=True)
         
         visual_token_nums.append(v_token_num)
@@ -260,6 +298,12 @@ if __name__ == "__main__":
                         help="Which intermediate layer to extract embeddings from (0-indexed)")
     parser.add_argument("--use-intermediate-feedback", action="store_true", default=False,
                         help="Use intermediate layer feedback. If False, only use projector output.")
+    parser.add_argument("--prompt-tokens-path", type=str, default=None,
+                        help="Path to trained prompt tokens checkpoint")
+    parser.add_argument("--num-prompt-tokens", type=int, default=20,
+                        help="Number of prompt tokens (used if prompt-tokens-path is provided)")
+    parser.add_argument("--prompt-init-method", type=str, default="random",
+                        help="How to initialize prompt tokens if not loading from checkpoint")
     parser.add_argument("--seed", type=int, default=0)
     args = parser.parse_args()
 

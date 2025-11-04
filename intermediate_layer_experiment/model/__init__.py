@@ -15,3 +15,13 @@ __all__ = [
     'LlavaIntermediateLayerConfig',
 ]
 
+# Fixed train/inference consistency version
+from .llava_intermediate_layer_fixed import (
+    LlavaIntermediateLayerForCausalLMFixed,
+    LlavaIntermediateLayerConfigFixed,
+)
+
+__all__.extend([
+    'LlavaIntermediateLayerForCausalLMFixed',
+    'LlavaIntermediateLayerConfigFixed',
+])

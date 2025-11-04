@@ -1,4 +1,9 @@
-#    Modified LLaVA model with intermediate layer extraction and feedback
+#    Modified LLaVA model with intermediate layer extraction and feedback (FIXED VERSION)
+#
+#    This version fixes the train/inference distribution mismatch:
+#    - Training: Extract intermediate layer from question only (no answer)
+#    - Then append answer embeddings for loss computation
+#    - This ensures intermediate_seq is consistent between training and inference
 #
 #    Based on LLaVA (Copyright 2023 Haotian Liu)
 #    Licensed under the Apache License, Version 2.0
@@ -20,13 +25,14 @@ from llava.model.language_model.llava_llama import (
 from llava.constants import IMAGE_TOKEN_INDEX
 
 
-class LlavaIntermediateLayerConfig(LlavaConfig):
+class LlavaIntermediateLayerConfigFixed(LlavaConfig):
     """
-    Configuration class for LlavaIntermediateLayerForCausalLM.
+    Configuration class for LlavaIntermediateLayerForCausalLMFixed.
 
     Adds configuration for intermediate layer extraction and prompt tuning.
+    FIXED VERSION: Ensures train/inference consistency.
     """
-    model_type = "llava_intermediate_layer"
+    model_type = "llava_intermediate_layer_fixed"
 
     def __init__(
         self,
@@ -45,9 +51,14 @@ class LlavaIntermediateLayerConfig(LlavaConfig):
         self.prompt_init_method = prompt_init_method
 
 
-class LlavaIntermediateLayerForCausalLM(LlavaLlamaForCausalLM):
+class LlavaIntermediateLayerForCausalLMFixed(LlavaLlamaForCausalLM):
     """
     Modified LLaVA model that extracts the complete sequence from an intermediate layer
+
+    FIXED VERSION: Ensures train/inference consistency by:
+    1. Extracting intermediate layer from question only (no answer)
+    2. Appending answer embeddings after intermediate extraction (training only)
+    3. This makes intermediate_seq identical between training and inference
     and feeds it back as input to the LLM.
 
     Architecture flow:
@@ -61,7 +72,7 @@ class LlavaIntermediateLayerForCausalLM(LlavaLlamaForCausalLM):
     This approach avoids the semantic mismatch problem where vision embeddings from Layer N
     would be concatenated with text embeddings from Layer 0.
     """
-    config_class = LlavaIntermediateLayerConfig
+    config_class = LlavaIntermediateLayerConfigFixed
 
     def __init__(self, config, visual_token_num=None):
         super().__init__(config, visual_token_num)
@@ -116,8 +127,9 @@ class LlavaIntermediateLayerForCausalLM(LlavaLlamaForCausalLM):
             Embeddings with prompt tokens prepended [batch_size, seq_len + num_prompt_tokens, hidden_dim]
         """
         batch_size = embeddings.shape[0]
-        # Expand prompt embeddings to batch size
+        # Expand prompt embeddings to batch size and convert to same dtype/device as embeddings
         prompt_tokens = self.prompt_embeddings.unsqueeze(0).expand(batch_size, -1, -1)
+        prompt_tokens = prompt_tokens.to(dtype=embeddings.dtype, device=embeddings.device)
         # Prepend to embeddings
         return torch.cat([prompt_tokens, embeddings], dim=1)
 
@@ -232,11 +244,31 @@ class LlavaIntermediateLayerForCausalLM(LlavaLlamaForCausalLM):
         images: Optional[torch.FloatTensor] = None,
         image_sizes: Optional[List[List[int]]] = None,
         return_dict: Optional[bool] = None,
+        answer_input_ids: Optional[torch.LongTensor] = None,  # NEW: Answer tokens to append after intermediate extraction
+        answer_labels: Optional[torch.LongTensor] = None,  # NEW: Answer labels (with proper padding handling)
     ) -> Union[Tuple, CausalLMOutputWithPast]:
         """
         Forward pass with support for intermediate layer feedback and prompt tuning.
 
-        This method is used during training.
+        FIXED VERSION: Two-stage training to ensure train/inference consistency.
+
+        Args:
+            answer_input_ids: Optional answer token IDs to append AFTER intermediate extraction.
+                             Only used during training with prompt tuning.
+                             Shape: [batch_size, answer_seq_len]
+
+        Training flow:
+            1. input_ids contains ONLY question (no answer)
+            2. Extract intermediate layer from question
+            3. Add prompt tokens
+            4. Append answer_input_ids embeddings
+            5. Compute loss on answer tokens
+
+        Inference flow:
+            1. input_ids contains question
+            2. Extract intermediate layer
+            3. Add prompt tokens
+            4. Generate (no answer_input_ids)
         """
         # Prepare multimodal inputs
         if inputs_embeds is None:
@@ -315,6 +347,47 @@ class LlavaIntermediateLayerForCausalLM(LlavaLlamaForCausalLM):
                             device=labels.device
                         )
                         labels = torch.cat([prompt_labels, labels], dim=1)
+
+                    # NEW: Append answer embeddings (during training AND validation)
+                    # This is the KEY FIX: answer is added AFTER intermediate extraction
+                    # so intermediate_seq doesn't contain answer (consistent with inference)
+                    # Note: We append answer in both training and validation (for loss computation)
+                    # but NOT during inference (when answer_input_ids is None)
+                    if answer_input_ids is not None:
+                        # Get answer embeddings
+                        answer_embeds = self.get_model().embed_tokens(answer_input_ids)
+
+                        # Append to inputs_embeds
+                        inputs_embeds = torch.cat([inputs_embeds, answer_embeds], dim=1)
+
+                        # Extend attention mask for answer tokens
+                        answer_attention = torch.ones(
+                            batch_size, answer_input_ids.shape[1],
+                            dtype=attention_mask.dtype,
+                            device=attention_mask.device
+                        )
+                        attention_mask = torch.cat([attention_mask, answer_attention], dim=1)
+
+                        # Extend position IDs for answer tokens
+                        current_seq_len = position_ids.shape[1]
+                        answer_position_ids = torch.arange(
+                            current_seq_len,
+                            current_seq_len + answer_input_ids.shape[1],
+                            dtype=position_ids.dtype,
+                            device=position_ids.device
+                        ).unsqueeze(0).expand(batch_size, -1)
+                        position_ids = torch.cat([position_ids, answer_position_ids], dim=1)
+
+                        # Extend labels for answer tokens
+                        # Use provided answer_labels if available, otherwise clone from answer_input_ids
+                        if labels is not None:
+                            if answer_labels is None:
+                                # Fallback: use answer_input_ids as labels
+                                answer_labels_to_use = answer_input_ids.clone()
+                            else:
+                                # Use provided answer_labels (with proper padding handling)
+                                answer_labels_to_use = answer_labels
+                            labels = torch.cat([labels, answer_labels_to_use], dim=1)
 
         # Call parent forward
         return super().forward(
@@ -502,6 +575,6 @@ class LlavaIntermediateLayerForCausalLM(LlavaLlamaForCausalLM):
 
 
 # Register the new model configuration and class
-AutoConfig.register("llava_intermediate_layer", LlavaIntermediateLayerConfig)
-AutoModelForCausalLM.register(LlavaIntermediateLayerConfig, LlavaIntermediateLayerForCausalLM)
+AutoConfig.register("llava_intermediate_layer_fixed", LlavaIntermediateLayerConfigFixed)
+AutoModelForCausalLM.register(LlavaIntermediateLayerConfigFixed, LlavaIntermediateLayerForCausalLMFixed)
 
